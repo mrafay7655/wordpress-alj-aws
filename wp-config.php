@@ -1,4 +1,9 @@
 <?php
+
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
+
 /**
  * The base configuration for WordPress
  *
@@ -88,7 +93,7 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 define('WP_HOME', 'https://aljmachinery-temp.projectstagingserver.com');
 define('WP_SITEURL', 'https://aljmachinery-temp.projectstagingserver.com');
-define('FORCE_SSL_ADMIN', true);
+define('FORCE_SSL_ADMIN', false);
 /* Add any custom values between this line and the "stop editing" line. */
 
 
