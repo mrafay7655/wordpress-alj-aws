@@ -1,0 +1,8063 @@
+/*
+Theme Name: Hello Elementor Child
+Theme URI: https://example.com/
+Description: Child theme for the Hello Elementor theme
+Author: Hassan Ahmed Khan
+Author URI: https://example.com/
+Template: hello-elementor
+Version: 1.0.0
+*/
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Thin.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Bold.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-LightItalic.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-HairlineItalic.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-HairlineItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-BoldItalic.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Light.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Hairline.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Hairline.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Medium.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-ThinItalic.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-SemiboldItalic.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Semibold.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-MediumItalic.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-RegularItalic.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karbon";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Regular.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Karbon-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Luma";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Luma-Light.woff2") format("woff2"),
+    url("/wp-content/themes/hello-elementor-child/fonts/Luma-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Luma";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Luma-Regular.woff2") format("woff2"),
+    url("Luma-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Luma";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Luma-SemiBold.woff2") format("woff2"),
+    url("Luma-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Luma";
+  src: url("/wp-content/themes/hello-elementor-child/fonts/Luma-Thin.woff2") format("woff2"),
+    url("Luma-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 0.9027777778vw;
+  scroll-behavior: auto !important;
+  overflow-x: hidden;
+}
+
+/* Font Scalablitiy  */
+@media (max-width: 1024px) {
+  html {
+    font-size: 1.5625vw;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 4.102564103vw;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.438rem;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0.375rem;
+  background: var(--primary);
+}
+
+/* Project Setup  */
+
+:root {
+  --primary: #327585;
+  --secondary: #232323;
+  --gray: #616163;
+  --char: #4d4e4d;
+  --slate: #616163;
+  --bg-1: #dfe7eb;
+  --bg-2: #f3f3f1;
+  --sand: #b1aca0;
+  --bg-dark: #212123cc;
+  --white: #ffffff;
+  --komatsu: #140a9a;
+  --powerscreen: #278188;
+  --toyota: #eb0a1e;
+  --rental: #f25e18;
+  --teksan: #1e366c;
+  --mds: #ad1d1d;
+  --terex: #cc0000;
+  --man: #e40045;
+}
+
+body {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  font-family: "Karbon" !important;
+  position: relative;
+}
+
+body .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+  padding: 0 !important;
+}
+
+body .elementor-widget:not(:last-child) {
+  margin-block-end: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p,
+span {
+  margin: 0 !important;
+  font-family: "Karbon" !important;
+}
+
+.myContainer {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.myContainer-2 {
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+}
+
+.container-left {
+  padding-left: 5rem;
+}
+
+.container-right {
+  padding-right: 5rem;
+}
+
+.sec-padded {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.top-padded {
+  padding-top: 6.25rem;
+}
+
+.bottom-padded {
+  padding-bottom: 6.25rem;
+}
+
+.m-bottom {
+  margin-bottom: 1.5rem !important;
+}
+
+.m-bottom-2 {
+  margin-bottom: 2.5rem !important;
+}
+
+.m-bottom-3 {
+  margin-bottom: 3.75rem !important;
+}
+
+body .elementor-widget:not(:last-child).m-bottom-2 {
+  margin-bottom: 2.5rem !important;
+}
+
+body .elementor-widget:not(:last-child).m-bottom {
+  margin-bottom: 1.5rem !important;
+}
+
+body .elementor-widget:not(:last-child).m-bottom-3 {
+  margin-bottom: 3.75rem !important;
+}
+
+.bg-sec {
+  background: var(--bg-1) !important;
+}
+
+h1 {
+  font-size: 4rem !important;
+  font-family: "Karbon" !important;
+  font-weight: 500 !important;
+  color: var(--white) !important;
+  line-height: 1 !important;
+}
+
+h2 {
+  font-size: 2.875rem !important;
+  font-weight: 600 !important;
+  font-family: "Karbon" !important;
+  color: var(--secondary) !important;
+}
+
+h3 {
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  color: var(--secondary) !important;
+}
+
+h4 {
+  color: var(--slate) !important;
+  font-family: "Karbon" !important;
+  font-weight: 500 !important;
+  font-size: 1.375rem !important;
+}
+
+p {
+  font-size: 1.25rem !important;
+  font-family: "Karbon" !important;
+  font-weight: 400 !important;
+  color: var(--gray);
+}
+
+.elementor-widget-heading span {
+  color: #7d9fb0 !important;
+  font-family: "Karbon" !important;
+  font-size: 1rem !important;
+  text-transform: capitalize;
+  margin-bottom: 1rem !important;
+  display: block;
+  font-weight: 500 !important;
+}
+
+.industrySec .elementor-widget-heading span {
+  display: none;
+}
+
+.otgs-development-site-front-end {
+  display: none;
+}
+
+/* Header Start  */
+.topBar .col-1 ul {
+  height: 3.875rem;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.wpr-sub-menu-item span.wpml-ls-native {
+  font-family: "Luma" !important;
+}
+
+.topBar ul li a {
+  padding: 0 !important;
+}
+
+.bg-black {
+  background: #272727;
+}
+
+.topBar .col-1 ul li a {
+  color: var(--white) !important;
+  font-size: 1.25rem;
+  font-weight: 400;
+  position: relative;
+  transition: all 0.4s ease-out;
+}
+
+.topBar .col-1 ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) !important;
+  background: var(--primary);
+  border-radius: 6.25rem;
+  width: 0.188rem;
+  height: 0.188rem;
+  left: -0.875rem;
+}
+
+.topBar .col-1 ul li:first-child a:before {
+  display: none;
+}
+
+.topBar .col-1 ul li a>span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.topBar .col-1 ul li a>span img.wpml-ls-flag {
+  width: 1.313rem;
+  height: 0.875rem;
+}
+
+.topBar .col-1 ul li a i.wpr-sub-icon.fas {
+  position: absolute;
+  right: -1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 !important;
+}
+
+.topBar .col-2 svg {
+  width: 1.125rem !important;
+  height: 1.125rem !important;
+  margin: 0 !important;
+}
+
+.topBar .col-2 .elementor-widget-icon-list {
+  height: 100%;
+}
+
+.topBar .col-2 .elementor-widget-icon-list ul.elementor-icon-list-items,
+.topBar .col-2 ul li {
+  height: 100%;
+  display: flex;
+}
+
+.topBar .col-2 ul li {
+  border: 0.063rem solid #43413e;
+  padding: 0 1rem;
+  width: fit-content;
+  border-top: 0;
+  border-bottom: 0;
+  background: #43413e;
+}
+
+.topBar .col-2 ul li span.elementor-icon-list-text {
+  display: none;
+}
+
+.topBar .col-1 ul li a i.wpr-sub-icon.fas:before {
+  content: "";
+  background-image: url(/wp-content/uploads/2025/12/chevron.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 0.625rem;
+  height: 0.313rem;
+  display: block;
+}
+
+.header .col-1 {
+  width: 15.75rem !important;
+  position: relative;
+  background: var(--white);
+  /*   margin-bottom: -1rem; */
+}
+
+.header .col-2 {
+  width: 65rem !important;
+}
+
+.header .col-3 {
+  width: 14.5rem !important;
+}
+
+.header>.elementor-container {
+  justify-content: space-between;
+}
+
+.contactBtn a {
+  padding: 2.813rem 3.313rem;
+  border-radius: 0;
+  background: var(--primary) !important;
+  font-family: "Karbon" !important;
+  font-size: 1.25rem;
+  font-weight: 500 !important;
+  height: 100%;
+}
+
+.searchHeader {
+  position: absolute !important;
+  right: 0;
+  width: 100% !important;
+  z-index: 1;
+  height: 100%;
+}
+
+a.wpr-mobile-sub-menu-item .wpml-ls-native {
+  font-family: "Luma" !important;
+}
+
+.rtl a.wpr-mobile-sub-menu-item .wpml-ls-native {
+  font-family: "Karbon" !important;
+}
+
+.searchHeader a {
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.searchHeader img {
+  width: 1.125rem !important;
+  margin-right: 1.25rem;
+}
+
+.contactBtn {
+  width: fit-content !important;
+  z-index: 2;
+}
+
+.header .col-2 ul.wpr-nav-menu {
+  display: flex;
+  gap: 2.125rem;
+  justify-content: flex-start;
+}
+
+.header .col-2 ul li a {
+  padding: 0 !important;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  color: var(--slate) !important;
+  transition: all 0.4s ease-out;
+}
+
+.header .col-2 ul li a i {
+  margin: 0 !important;
+  position: absolute;
+  top: -0.125rem;
+  right: -0.375rem;
+}
+
+.header .col-2 ul li a i:before {
+  content: "";
+  background: var(--primary);
+  border-radius: 6.25rem;
+  width: 0.125rem !important;
+  height: 0.188rem !important;
+  display: block;
+}
+
+.header .col-2 ul li:last-child a i {
+  right: -0.3rem;
+}
+
+.popupTop .col-2 img {
+  width: 12.5rem;
+}
+
+.header .col-2 ul li:before {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  height: 0.125rem;
+  bottom: -1.5rem;
+  transition: all 0.4s ease-out;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header .col-2 ul li {
+  height: 100%;
+  position: relative;
+}
+
+.header .col-2 ul li:hover:before {
+  width: 100%;
+}
+
+.header .col-2 ul li:hover a {
+  color: var(--primary) !important;
+}
+
+.header .col-2 ul li.current-menu-item:before {
+  width: 100%;
+}
+
+.header .col-2 ul li.current-menu-item a {
+  color: var(--primary) !important;
+}
+
+.topBar .col-1 ul li a:hover {
+  color: var(--primary) !important;
+}
+
+.topBar .col-2 svg path {
+  transition: all 0.4s ease-out;
+}
+
+.topBar .col-2 svg:hover path {
+  fill: var(--primary) !important;
+}
+
+.topBar .col-1 ul.sub-menu {
+  height: auto;
+  padding: 0.5rem;
+  background: white;
+  border: none !important;
+  z-index: 2;
+  transform: translateY(1.125rem) !important;
+  width: 7.188rem;
+}
+
+.topBar .col-1 ul.sub-menu li a {
+  color: var(--primary) !important;
+}
+
+.header {
+  z-index: 2;
+  background: var(--white);
+  box-shadow: 0px 4px 20px 0px #0000001a;
+}
+
+.heroSec .swiper-slide-inner {
+  justify-content: left !important;
+  align-items: center !important;
+}
+
+/* Header End  */
+
+/* Footer Start  */
+
+.footer-middle .col-1 {
+  width: 15rem !important;
+}
+
+.footer-middle .col-2 {
+  width: 11.875rem !important;
+}
+
+.footer-middle .col-3 {
+  width: 7.313rem !important;
+}
+
+.footer-middle .col-4 {
+  width: 21.938rem !important;
+}
+
+.footer-middle .col-4 img {
+  width: 18.938rem;
+}
+
+.footer-middle .elementor-column {
+  width: fit-content !important;
+}
+
+.footer-middle .elementor-container {
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.footer-bottom .elementor-widget-text-editor a {
+  color: white;
+  text-decoration: underline;
+}
+
+.value-content-wrapper ul {
+  padding-left: 1.3rem;
+}
+
+.value-content-wrapper .elementor-widget-image {
+  overflow: hidden;
+}
+
+.value-content-wrapper .elementor-widget-image img {
+  transition: all 0.4s ease-out;
+}
+
+/* .value-content-wrapper .elementor-widget-image:hover img {
+  transform: scale(1.2);
+} */
+
+.footer-middle {
+  padding-top: 3.125rem;
+  padding-bottom: 2.082rem;
+}
+
+.elementor-widget-text-editor ul li {
+    font-size: 1.25rem !important;
+    color: var(--gray);
+	list-style:disc;
+}
+
+.footer-middle p {
+  /*   color: var(--primary); */
+  color: var(--white);
+  font-weight: 500 !important;
+}
+
+.footer {
+  background: #121212;
+}
+
+.footer-middle ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footer-middle ul li a {
+  font-family: "Karbon" !important;
+  font-size: 1.125rem !important;
+}
+
+.footer-middle ul li a span {
+  color: #e0e1e4 !important;
+  font-weight: 400;
+  transition: all 0.4s ease-out;
+}
+
+.footer-middle ul li a:hover span {
+  color: var(--primary) !important;
+}
+
+.footer-middle .col-4 p {
+  color: #e0e1e4 !important;
+  font-weight: 400 !important;
+  text-align: justify;
+  margin-top: 1rem !important;
+}
+
+.footer-bottom p {
+  color: #ffffff;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.3;
+  margin-bottom: 1.5rem !important;
+}
+
+.footer-bottom {
+  padding: 2rem 0;
+  border-top: 0.063rem solid #616163;
+}
+
+.footer-bottom ul {
+  display: flex;
+  gap: 1.875rem;
+  margin: 0 !important;
+}
+
+.footer-bottom ul li a {
+  font-family: "Karbon" !important;
+  font-size: 1.125rem !important;
+  position: relative;
+}
+
+.footer-bottom ul li a span {
+  transition: all 0.4s ease-out;
+  color: #e0e1e4 !important;
+}
+
+.footer-bottom ul li a:hover span {
+  color: white !important;
+}
+
+.footer-bottom ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) !important;
+  background: var(--primary);
+  border-radius: 6.25rem;
+  width: 0.188rem;
+  height: 0.188rem;
+  left: -0.875rem;
+}
+
+.footer-bottom ul li:first-child a:before {
+  display: none;
+}
+
+.footer-bottom ul li:last-child a {
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  transition: all 0.4s ease-out;
+}
+
+.footer-bottom ul li:last-child a span {
+  color: white !important;
+}
+
+.footer-bottom ul li:last-child a:hover {
+  background: white !important;
+}
+
+.footer-bottom ul li:last-child a:hover span {
+  color: #121212 !important;
+}
+
+.footer-bottom ul li a:hover span {
+  color: var(--primary) !important;
+}
+
+.footer-top {
+  display: none;
+}
+
+.home .footer-top {
+  display: block;
+}
+
+/* Footer End  */
+
+/* Post Sec Start  */
+.elementor-widget-heading span {
+  color: #7d9fb0 !important;
+  font-family: "Karbon" !important;
+  font-size: 1rem !important;
+  text-transform: capitalize;
+  margin-bottom: 1rem !important;
+  display: block;
+  font-weight: 500 !important;
+}
+
+.postSec .elementor-loop-container {
+  gap: 1.25rem;
+}
+
+.postSec .elementor-loop-container img {
+  width: 100%;
+  height: 20.5rem;
+  object-fit: cover;
+}
+
+.postDate ul {
+  margin: 0 !important;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.postSec section {
+  position: relative;
+}
+
+.postDate {
+  position: absolute !important;
+  bottom: 4.65rem;
+  right: 0;
+  width: fit-content !important;
+}
+
+.postDate ul li {
+  width: 100%;
+  justify-content: center;
+}
+
+.postDate ul li:first-child {
+  padding: 0 0.813rem;
+  background: var(--primary);
+  font-family: "Karbon" !important;
+  color: white !important;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.postDate ul li:first-child span {
+  color: white !important;
+}
+
+.postDate ul li:last-child {
+  padding: 0.313rem 0.625rem;
+  background: var(--char);
+  font-family: "Karbon";
+}
+
+.postDate ul li:last-child span {
+  font-size: 1rem;
+  color: white;
+}
+
+.postSec h4, .postSec h3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-top: 3rem !important;
+  min-height: 3.2rem !important;
+  line-height: 1.2 !important;
+  font-family: "Karbon" !important;
+  font-weight: 500 !important;
+  font-size: 1.375rem !important;
+}
+
+.postSec h2 {
+  width: 43rem;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.postSec .elementor-widget-theme-post-featured-image a {
+  overflow: hidden;
+  width: 100%;
+}
+
+.postSec .elementor-widget-theme-post-featured-image a img {
+  transition: all 0.4s ease-out;
+}
+
+.postSec .e-loop-item:hover .elementor-widget-theme-post-featured-image a img {
+  transform: scale(1.2) !important;
+}
+
+.postSec .e-loop-item:hover h4 {
+  color: var(--primary) !important;
+}
+
+.variant-btn a {
+  background: transparent !important;
+  color: var(--char) !important;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 500 !important;
+  position: relative;
+  padding: 0;
+}
+
+.variant-btn a>span {
+  gap: 0.688rem;
+}
+
+.variant-btn a>span svg {
+  width: 0.75rem;
+  transition: all 0.4s ease-out;
+  transform: rotate(-90deg);
+}
+
+.variant-btn a:before {
+  content: "";
+  background: var(--char);
+  width: 100%;
+  height: 0.063rem;
+  position: absolute;
+  bottom: -0.688rem;
+  right: 0;
+  transition: all 0.4s ease-out;
+}
+
+.variant-btn a:hover:before {
+  width: 0;
+}
+
+.variant-btn a span.elementor-button-text {
+  color: var(--char) !important;
+}
+
+.variant-btn a:hover span svg {
+  transform: rotate(-45deg);
+}
+
+.postSec {
+  padding-top: calc(6.25rem + 1.25rem);
+}
+
+/* Post Sec End  */
+
+/* Form Sec Start  */
+
+.bg-sec-2 {
+  background: #327585;
+}
+
+.elementor-widget-heading.white span {
+  color: white !important;
+}
+
+.form {
+  z-index: 2;
+  position: relative;
+}
+
+.form .row p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form textarea {
+  margin-top: 1.25rem;
+}
+
+.form input,
+.form textarea {
+  border-radius: 0;
+  background: white;
+  color: #121212;
+  padding: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #b0b0b1 !important;
+}
+
+.form textarea {
+  height: 8.75rem;
+}
+
+.form .submit p {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.form br {
+  display: none;
+}
+
+.form .submit span.wpcf7-spinner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -2rem;
+}
+
+.form .submit p input {
+  padding: 0rem 1.5rem;
+  font-weight: 500;
+  color: white;
+  background: transparent;
+  border: 0.125rem solid white;
+  height: 2.75rem;
+  border-right: 0 !important;
+  padding-right: calc(1.5rem + 2.75rem);
+  transition: all 0.4s ease-out;
+}
+
+.form .submit {
+  position: relative;
+  width: fit-content;
+  margin-top: 2rem;
+}
+
+.form .arrow {
+  width: fit-content;
+  background: white;
+  transition: all 0.4s ease-out;
+  position: absolute;
+  right: -0.063rem;
+  top: 0;
+  height: 2.75rem;
+  width: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.063rem solid white;
+  pointer-events: none;
+}
+
+.form .arrow img {
+  width: 0.75rem;
+  height: 0.75rem;
+  transition: all 0.4s ease-out;
+}
+
+.form .submit:hover input {
+  color: var(--primary);
+  background: white;
+}
+
+.form .submit:hover .arrow {
+  background: var(--primary);
+}
+
+.form .submit:hover .arrow img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(295deg) brightness(106%) contrast(104%);
+  transform: rotate(45deg);
+}
+
+.contactSec img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.contactSec .col-1 {
+  width: 45% !important;
+}
+
+.contactSec .col-2 {
+  width: 55% !important;
+  padding: 3.75rem;
+  padding-right: 10.313rem;
+}
+
+.white p {
+  color: white;
+}
+
+.contactSec .elementor-widget-image {
+  height: 100%;
+}
+
+.contactSec h2 {
+  margin-bottom: 1rem !important;
+}
+
+/* Form Sec End  */
+
+/* Values Sec Start  */
+.valuesSec img {
+  width: 100%;
+  height: 40rem !important;
+  object-fit: cover;
+}
+
+/* .valuesContent {
+  position: absolute !important;
+  bottom: -2.25rem;
+  z-index: 1;
+  width: 45rem !important;
+} */
+
+.valuesContent {
+  position: relative !important;
+  bottom: 0;
+  z-index: 1;
+  width: 100% !important;
+}
+
+.valuesContent .elementor-container.elementor-column-gap-default {
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.valuesContent .elementor-container .elementor-column {
+  padding: 2.5rem 2rem;
+}
+
+.white h2 {
+  color: white !important;
+}
+
+.elementor-widget-heading.white h2 span {
+  color: var(--primary) !important;
+  font-size: 2.875rem !important;
+  font-weight: 600 !important;
+  display: inline;
+}
+
+.valuesContent h3 {
+  color: white !important;
+}
+
+.valuesContent p {
+  color: white;
+  margin-bottom: 1rem !important;
+}
+
+.valuesContent p:last-child {
+  margin: 0 !important;
+}
+
+/* Values Sec End  */
+
+/* Products Sec Start  */
+
+.industrySecTop .col-1 {
+  width: 28.75rem !important;
+}
+
+.industrySecTop .col-2 {
+  width: 39.25rem !important;
+}
+
+.industrySecTop .elementor-container {
+  justify-content: space-between;
+}
+
+p strong {
+  font-weight: 600;
+}
+
+.productsGrid .elementor-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.productsGrid .elementor-container .box {
+  width: 100%;
+  position: relative;
+  transition: all 0.4s ease-out;
+}
+
+.productsGrid .elementor-container .box figure {
+  width: 100%;
+  margin: 0 !important;
+  height: 100%;
+}
+
+.productsGrid .elementor-container .box figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productsGrid .elementor-container .box .elementor-image-box-content {
+  position: absolute;
+  padding: 1.25rem 2rem;
+  background: var(--char);
+  min-height: 5.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 3.582rem;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+}
+
+.productsGrid .elementor-container .box .elementor-image-box-wrapper {
+  height: 31.563rem;
+}
+
+.productsGrid .elementor-container .box .elementor-image-box-content h4, .productsGrid .elementor-container .box .elementor-image-box-content h3 {
+  color: white !important;
+  transition: all 0.4s ease-out;
+  font-family: "Karbon" !important;
+  font-weight: 500 !important;
+  font-size: 1.375rem !important;
+}
+
+.productsGrid .elementor-container .box .elementor-image-box-content h4 a:after {
+  content: "";
+  background-image: url(/wp-content/uploads/2025/12/btn-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.4s ease-out;
+  filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(2%) hue-rotate(328deg) brightness(101%) contrast(101%);
+}
+
+.productsGrid .elementor-container .box .elementor-image-box-content h4 a {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.productsGrid .elementor-container .box .elementor-image-box-content p {
+  color: white;
+  transition: all 0.4s ease-out;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(150%);
+  bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+.productsGrid .elementor-container .box:hover .elementor-image-box-content {
+  background: var(--primary);
+  bottom: 0;
+}
+
+.productsGrid .elementor-container .box:hover .elementor-image-box-content h4 a:after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.productsGrid .elementor-container .box:hover .elementor-image-box-content p {
+  opacity: 1;
+  margin-top: 0.5rem !important;
+  transform: translateY(-30%);
+}
+
+.productsGrid .elementor-container .box:hover {
+  margin-top: -1rem !important;
+}
+
+.productsGrid .elementor-container .box:hover .elementor-image-box-content h4, .productsGrid .elementor-container .box:hover .elementor-image-box-content h3 {
+  margin-bottom: 6rem !important;
+}
+
+/* Products Sec End  */
+
+/* Hero Sec Start  */
+
+.heroSec a {
+  padding: 0rem 1.5rem;
+  font-weight: 500 !important;
+  color: white !important;
+  background: transparent !important;
+  border: 0.125rem solid var(--primary) !important;
+  height: 2.75rem;
+  border-right: 0 !important;
+  padding-right: calc(1.5rem + 2.75rem);
+  transition: all 0.4s ease-out;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 0;
+  margin-top: 2.813rem !important;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.heroSec a:hover {
+  background: var(--primary) !important;
+}
+
+.heroSec a:after {
+  content: "";
+  background: var(--primary);
+  width: 2.75rem;
+  height: 2.75rem;
+  position: absolute;
+  right: 0;
+  border: 0.063rem solid var(--primary);
+  transition: all 0.4s ease-out;
+}
+
+.heroSec a:before {
+  content: "";
+  background-image: url(/wp-content/uploads/2025/12/btn-arrow.svg);
+  width: 0.75rem;
+  height: 0.75rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(2%) hue-rotate(328deg) brightness(101%) contrast(101%);
+  right: 1rem;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.4s ease-out;
+}
+
+.heroSec a:hover:before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.heroSec:before {
+  content: "";
+  position: absolute;
+  width: 4.375rem;
+  height: 8.75rem;
+  bottom: -4.375rem;
+  left: 5rem;
+  background: var(--sand);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.heroSec:after {
+  content: "";
+  position: absolute;
+  width: 4.375rem;
+  height: 8.75rem;
+  bottom: -4.375rem;
+  left: calc(5rem + 4.37rem);
+  background: #7d9fb0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* .industrySec {
+  padding-top: 9.688rem;
+} */
+
+.heroSec .slide-progress-wrap {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  padding: 2rem 3.234rem;
+  left: 5rem;
+  /*   left: 9.375rem; */
+  background: #3d3d3d;
+  z-index: 1;
+}
+
+.heroSec .slide-progress-wrap span {
+  color: white !important;
+  font-size: 1.25rem;
+}
+
+.heroSec .slide-progress-wrap .slide-progress {
+  width: 10rem;
+  height: 0.063rem;
+  background: white;
+  position: relative;
+}
+
+.heroSec .slide-progress-wrap .slide-progress span.slide-progress-bar {
+  background: #7d9fb0;
+  position: absolute;
+  height: 0.063rem;
+}
+
+.heroSec .swiper-pagination {
+  width: fit-content !important;
+  /*   left: 29.813rem !important; */
+  left: 25.7rem !important;
+  bottom: 0 !important;
+  padding: 2rem 3.234rem;
+  gap: 2.5rem;
+  display: flex;
+  background: #3d3d3d;
+  height: 5.88rem;
+  align-items: center;
+  padding-left: 0;
+  z-index: 1;
+}
+
+.heroSec .swiper-pagination .swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  transition: all 0.4s ease-out;
+  background: #9da2b2;
+  opacity: 1;
+  border: 0.063rem solid #9da2b2;
+}
+
+.heroSec .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: transparent;
+  border: 0.063rem solid #7d9fb0;
+}
+
+/* Hero Sec End  */
+
+/* Materials Page  */
+.productsInfo .col-1,
+.productsInfo .industrySecTop .col-2 {
+  width: 100% !important;
+}
+
+.productsInfo section>.elementor-container {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.productsInfo {
+  padding-top: 6.25rem;
+}
+
+.brandsSec .product-category-cards {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.brandsSec .product-category-cards .category-thumbnail img {
+  width: 100% !important;
+  height: 100%;
+  transition: all 0.4s ease-out;
+  object-fit: cover;
+}
+
+.brandsSec .product-category-cards .category-thumbnail {
+  overflow: hidden;
+  height: 28rem;
+}
+
+.brandsSec .product-category-cards .category-logo {
+  padding: 0 2rem;
+  background: var(--white);
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.brandsSec .product-category-cards .category-logo:after {
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  background-image: url(/wp-content/uploads/2025/12/btn-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(6%) saturate(142%) hue-rotate(71deg) brightness(89%) contrast(83%);
+}
+
+.product-category-card:hover .category-thumbnail img {
+  transform: scale(1.2);
+}
+
+.bg-sec-3 {
+  background: #f3f3f1;
+}
+
+.innerPageHero .elementor-widget-image img {
+  height: 31.25rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.innerPageHero .elementor-widget-image:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(74.61deg,
+      rgba(0, 0, 0, 0.9) -0.31%,
+      rgba(0, 0, 0, 0) 85.29%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.innerPageHero section {
+  z-index: 1;
+}
+
+.innerPageHero .pageTitle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.innerPageHero .pageTitle h1 {
+  width: 39.688rem;
+}
+
+.innerPageHero .breadcrumb {
+  bottom: 1.5rem;
+  position: absolute;
+}
+
+.innerPageHero .breadcrumb p#breadcrumbs>span {
+  display: flex;
+  align-items: center;
+  gap: 1.375rem;
+}
+
+.innerPageHero .breadcrumb p#breadcrumbs>span span img {
+  width: 1.2rem;
+  height: auto;
+}
+
+.innerPageHero .breadcrumb p#breadcrumbs>span img {
+  width: 0.5rem;
+  height: 0.625rem;
+  object-fit: contain;
+}
+
+.innerPageHero .breadcrumb p#breadcrumbs>span span.breadcrumb_last,
+.innerPageHero .breadcrumb p#breadcrumbs>span a {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Komatsu Pages  */
+.machinery-power-products .productsInfo h2,
+.machinery-power-products .productsInfo p {
+  color: white !important;
+}
+
+.komatsu .bg-sec {
+  background: var(--komatsu) !important;
+}
+
+.bg-sec-4 {
+  background: #ececec;
+}
+
+.subCatSec .elementor-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.25rem !important;
+}
+
+.subCatSec .elementor-grid img {
+  height: 31.563rem !important;
+  object-fit: cover;
+  margin: 0 !important;
+  transition: all 0.4s ease-out;
+}
+
+.subCatSec .elementor-grid h2 {
+  padding: 1.563rem 1.813rem !important;
+  background: white;
+  font-size: 1.375rem !important;
+  font-weight: 500 !important;
+  line-height: 1.2;
+  position: relative;
+}
+
+.subCatSec .elementor-grid h2:before {
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  background-image: url(/wp-content/uploads/2025/12/btn-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.4s ease-out;
+}
+
+.komatsu .subCatSec .elementor-grid h2:before {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(66%) saturate(3247%) hue-rotate(239deg) brightness(65%) contrast(134%);
+}
+
+.komatsu .subCatSec .elementor-grid h2 {
+  color: var(--komatsu) !important;
+  transition: all 0.4s ease-out;
+}
+
+.subCatSec .elementor-grid li a {
+  overflow: hidden !important;
+}
+
+.subCatSec .elementor-grid li a:hover img {
+  transform: scale(1.2);
+}
+
+.subCatSec .elementor-grid li a:hover h2 {
+  color: white !important;
+  transition: all 0.4s ease-out;
+}
+
+.subCatSec .elementor-grid li a:hover h2:before {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(5%) saturate(295%) hue-rotate(310deg) brightness(121%) contrast(100%);
+  transform: translateY(-50%) rotate(45deg) !important;
+}
+
+.komatsu .subCatSec .elementor-grid li a:hover h2 {
+  background: var(--komatsu);
+}
+
+.subCatSec .elementor-grid li {
+  overflow: hidden;
+}
+
+.relatedCat .main-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+}
+
+.relatedCat .main-category-grid img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.relatedCat .category-card-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 1.25rem 2rem;
+  background: var(--char);
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+  min-height: 7.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.relatedCat .main-category-grid a {
+  position: relative;
+  transition: all 0.4s ease-out;
+}
+
+.relatedCat .category-card-content h3 {
+  font-weight: 500 !important;
+  color: white !important;
+  line-height: 1.2 !important;
+  width: 26.625rem;
+  transition: all 0.4s ease-out;
+}
+
+.relatedCat .category-card-content p {
+  color: white;
+  transition: all 0.4s ease-out;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(180%);
+  bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+.relatedCat .category-card-content:after {
+  content: "";
+  background-image: url(/wp-content/uploads/2025/12/btn-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.4s ease-out;
+  filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(2%) hue-rotate(328deg) brightness(101%) contrast(101%);
+}
+
+.komatsu .relatedCat a:hover .category-card-content {
+  background: #253fc8;
+}
+
+.relatedCat a:hover .category-card-content:after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.relatedCat a:hover .category-card-content h3 {
+  margin-bottom: 4.5rem !important;
+}
+
+.relatedCat a:hover .category-card-content p {
+  opacity: 1;
+  margin-top: 0.5rem !important;
+  transform: translateY(0);
+  width: 90%;
+}
+
+.relatedCat .main-category-grid a:hover {
+  transform: translateY(-1rem);
+}
+
+.relatedCat .main-category-grid .category-card-image {
+  height: 100%;
+}
+
+.headerCat.header .col-3 img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(64%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(106%);
+}
+
+.komatsu .headerCat .contactBtn a {
+  background: #253fc8 !important;
+}
+
+.headerCat.header .col-2 {
+  width: 70rem !important;
+}
+
+.headerCat.header .col-3 {
+  float: left;
+}
+
+.headerCat.header .col-2 .innerCol1 {
+  width: fit-content !important;
+}
+
+.headerCat.header .col-2 ul {
+  justify-content: flex-start;
+  margin-left: 2.5rem;
+}
+
+.headerCat.header .col-2 ul li a {
+  color: white !important;
+}
+
+.headerCat.header .col-2 ul li:before {
+  background: white;
+}
+
+.headerCat.header .col-2 ul li a i:before {
+  background: white;
+}
+
+.komatsu .subCatSec .elementor-grid h2 mark {
+  display: none;
+}
+
+.product-specs {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-specs .spec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem;
+  align-items: center;
+}
+
+.product-specs .spec-item:nth-child(even) {
+  background: #140a9a0a;
+}
+
+.product-specs .spec-item p.spec-title {
+  color: var(--char) !important;
+  font-size: 1rem !important;
+}
+
+.product-specs .spec-item p.spec-value {
+  color: var(--char) !important;
+  font-weight: 500 !important;
+  text-align: right;
+}
+
+.productSpecs>.elementor-container {
+  justify-content: space-between;
+}
+
+.productSpecs .col-1 {
+  width: 48% !important;
+}
+
+.productSpecs .col-2 {
+  width: 50% !important;
+}
+
+.productSpecs .col-1 .flex-control-nav {
+  gap: 0.5rem;
+  display: flex;
+  margin: 0 2.25rem !important;
+  margin-top: 4.688rem !important;
+  z-index: 2;
+  position: relative;
+}
+
+a.woocommerce-product-gallery__trigger {
+  display: none;
+}
+
+.productSpecs ul.flex-direction-nav {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.productSpecs ul.flex-direction-nav li {
+  list-style: none;
+}
+
+.productSpecs ul.flex-direction-nav li a {
+  opacity: 1;
+  width: 1.625rem;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9d9d9;
+  text-indent: -9999px;
+  position: relative;
+}
+
+.productSpecs .col-1 .flex-control-nav li img {
+  height: 7.5rem !important;
+  object-fit: cover;
+  opacity: 1 !important;
+  width: fit-content;
+}
+
+.productSpecs ul.flex-direction-nav li a:before {
+  content: "";
+  background-image: url(/wp-content/uploads/2025/12/nav-next-prev.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.4s ease-out;
+}
+
+.productSpecs ul.flex-direction-nav li a.flex-prev:before {
+  transform: translateY(-50%) rotate(180deg);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(84%) saturate(7480%) hue-rotate(74deg) brightness(98%) contrast(96%);
+}
+
+.productSpecs .woocommerce-product-gallery {
+  margin: 0 !important;
+}
+
+.productSpecs .flex-active-slide a img {
+  height: 22.063rem !important;
+  object-fit: contain;
+}
+
+.komatsu .productSpecs ul.flex-direction-nav li a.flex-next {
+  background: var(--komatsu);
+}
+
+.komatsu .productSpecs ul.flex-direction-nav li a.flex-prev:hover {
+  background: var(--komatsu);
+}
+
+.komatsu .productSpecs ul.flex-direction-nav li a.flex-prev:hover:before {
+  filter: none;
+}
+
+.productSpecs .col-2 h2 {
+  font-size: 2.25rem !important;
+  line-height: 1.5;
+}
+
+.komatsu .productSpecs .col-2 h2 {
+  color: var(--komatsu) !important;
+}
+
+.specsHeading p {
+  padding: 1.25rem 2.5rem !important;
+  width: fit-content !important;
+  background: #232323;
+  color: white;
+}
+
+.specsHeading {
+  border-bottom: 0.063rem solid #000000;
+}
+
+.global-btn a {
+  padding: 1.125rem 1.5rem;
+  font-weight: 500 !important;
+  color: var(--char) !important;
+  background: transparent !important;
+  border: 0.125rem solid var(--primary);
+  border-radius: 0;
+  font-size: 1.25rem;
+  transition: all 0.4s ease-out;
+  position: relative;
+  padding-right: calc(1.5rem + 3.791rem);
+}
+
+.global-btn span.elementor-button-content-wrapper {
+  gap: 1.5rem;
+}
+
+.global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  padding: 1.125rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--primary);
+  transition: all 0.4s ease-out;
+  height: 100%;
+}
+
+.global-btn a:hover {
+  background: var(--primary) !important;
+  color: white !important;
+}
+
+.komatsu .global-btn a {
+  border-color: var(--komatsu);
+}
+
+.komatsu .global-btn a:hover {
+  background: var(--komatsu) !important;
+}
+
+.komatsu .global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  background: var(--komatsu);
+}
+
+.brochureBtn svg {
+  height: 1.125rem !important;
+  width: 0.875rem !important;
+}
+
+.komatsu .btnsProducts {
+  background: #f2f5f7;
+}
+
+.btnsProducts>.elementor-container {
+  justify-content: space-between;
+}
+
+.btnsProducts .col-1,
+.btnsProducts .col-2 {
+  width: 49% !important;
+}
+
+.btnsProducts a {
+  width: 100%;
+  padding: 2.25rem 2rem;
+  border-radius: 0;
+  font-size: 2.25rem;
+  font-weight: 400 !important;
+  padding-left: calc(6.446rem + 2.25rem);
+  position: relative;
+}
+
+.komatsu .btnsProducts a {
+  background: var(--komatsu);
+}
+
+.btnsProducts a>span {
+  justify-content: flex-start;
+}
+
+.btnsProducts a span.elementor-button-icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  padding: 1.313rem 2.5rem;
+  left: 0;
+}
+
+.komatsu .btnsProducts a span.elementor-button-icon {
+  background: #253fc8;
+}
+
+.btnsProducts a svg {
+  width: 2.438rem;
+}
+
+.btnsProducts a:after {
+  content: "";
+  background-image: url(/wp-content/uploads/2025/12/btn-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 2.25rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.4s ease-out;
+  filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(2%) hue-rotate(328deg) brightness(101%) contrast(101%);
+}
+
+.komatsu .btnsProducts a:hover {
+  background: #253fc8;
+}
+
+.btnsProducts a:hover:after {
+  transform: translateY(-50%) rotate(0);
+}
+
+.subCatProductsGrid .subcategory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.subCatProductsGrid .subcategory-grid a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 7.813rem;
+}
+
+.subCatProductsGrid .subcategory-grid a img {
+  width: 10.5rem;
+}
+
+.subCatProductsGrid .subcategory-grid a h3 {
+  text-align: center;
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important;
+  margin-top: 0.5rem !important;
+  font-weight: 500 !important;
+  color: #111212 !important;
+}
+
+.komatsu .subCatProductsGrid .subcategory-grid a {
+  /*   background: #f8f7ff; */
+  background: #fff;
+}
+
+.productsGridGlobalStyled img {
+  height: 9.375rem !important;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.productsGridGlobalStyled .elementor-widget-theme-post-featured-image {
+  background: #140a9a0a;
+  padding: 0.714rem 1.25rem;
+}
+
+.productsGridGlobalStyled .card {
+  background: white;
+}
+
+.productsGridGlobalStyled .productContent {
+  padding: 1.5rem 0;
+}
+
+.productsGridGlobalStyled h3 a {
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: 600;
+  display: block;
+  width: fit-content;
+  transition: all 0.4s ease-out;
+  position: relative;
+  margin-bottom: 0.5rem !important;
+}
+
+.komatsu .productsGridGlobalStyled h3 a {
+  color: var(--komatsu) !important;
+}
+
+.productsGridGlobalStyled .product-specs-related .spec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.625rem;
+}
+
+.productsGridGlobalStyled .product-specs-related .spec-item:nth-child(even) {
+  background: #140a9a0a;
+}
+
+.productsGridGlobalStyled .product-specs-related .spec-item p {
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
+  color: var(--char) !important;
+}
+
+.productsGridGlobalStyled .elementor-widget-button a {
+  border-radius: 0;
+  width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: white !important;
+  font-weight: 500;
+  transition: all 0.4s ease-out;
+}
+
+.komatsu .productsGridGlobalStyled .elementor-widget-button a {
+  background: var(--komatsu);
+}
+
+.productsGridGlobalStyled .elementor-widget-button a>span {
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.productsGridGlobalStyled .elementor-widget-button a>span svg {
+  width: 1rem;
+}
+
+.komatsu .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: #253fc8;
+}
+
+.komatsu .productsGridGlobalStyled .card:hover h3 a {
+  color: #253fc8 !important;
+}
+
+.productsGridGlobalStyled h3 a:before {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 0.063rem;
+  transition: all 0.4s ease-out;
+  opacity: 0;
+}
+
+.productsGridGlobalStyled h3 {
+  padding: 0 0.625rem !important;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  min-height: 3.5rem !important;
+}
+
+.komatsu .productsGridGlobalStyled h3 a:before {
+  background: var(--komatsu) !important;
+}
+
+.productsGridGlobalStyled .card:hover h3 a:before {
+  opacity: 1;
+}
+
+.productsGridGlobalStyled .elementor-swiper-button-prev {
+  width: 1.625rem;
+  height: 7.5rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  left: calc(-1.625rem - 1rem) !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.productsGridGlobalStyled .elementor-swiper-button-next {
+  width: 1.625rem;
+  height: 7.5rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  right: calc(-1.625rem - 1rem) !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.related-products {
+  overflow: visible !important;
+  position: relative !important;
+}
+
+.related-products:before, .related-products:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 5rem;
+  background: white;
+  z-index: 2;
+}
+
+.productsGridGlobalStyled .related-products-nav img {
+  width: 1.5rem;
+  height: 1.5rem !important;
+  z-index: 10;
+  mix-blend-mode: normal;
+}
+
+.productsGridGlobalStyled .related-products-nav .elementor-swiper-button-prev img {
+  transform: rotate(180deg);
+}
+
+.productsGridGlobalStyled .swiper-button-lock {
+  display: none !important;
+}
+
+.related-products:before {
+  left: -5rem;
+}
+
+.related-products:after {
+  right: -5rem;
+}
+
+.productsGridGlobalStyled .elementor-swiper-button-prev, .productsGridGlobalStyled .elementor-swiper-button-next {
+  z-index: 3;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.productsGridGlobalStyled .elementor-swiper-button-prev svg {
+  transform: rotate(180deg);
+}
+
+.komatsu .productsGridGlobalStyled .elementor-swiper-button-prev.swiper-button-disabled {
+  background: #95b5ad;
+}
+
+.komatsu .productsGridGlobalStyled .elementor-swiper-button-prev {
+  background: var(--komatsu);
+}
+
+.komatsu .productsGridGlobalStyled .elementor-swiper-button-next {
+  background: var(--komatsu);
+}
+
+.komatsu .productsGridGlobalStyled .elementor-swiper-button-prev:hover {
+  background: var(--komatsu);
+}
+
+.productsFilterSec>.elementor-container {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.productsFilterSec .col-1 {
+  width: 25% !important;
+}
+
+.productsFilterSec .col-2 {
+  width: 73% !important;
+}
+
+.productsFilterSec .col-1 h3 {
+  color: white !important;
+  text-transform: uppercase;
+  padding: 0.625rem;
+  font-size: 1.375rem !important;
+}
+
+.komatsu .productsFilterSec .col-1 h3 {
+  background: var(--komatsu);
+}
+
+.filterCard {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.filterCard img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.filterCard .filterCardHeading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12rem !important;
+  z-index: 2;
+}
+
+.filterCard .filterCardHeading h2 {
+  font-size: 2.375rem !important;
+  line-height: 1.2;
+}
+
+.megaMenuSubCat .subcategory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.megaMenuSubCat .subcategory-grid a.subcategory-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem !important;
+  background: white;
+  width: 20.875rem;
+  transition: all 0.4s ease-out;
+}
+
+.megaMenuSubCat {
+  padding: 1.25rem;
+  background: #f6f5ff;
+  z-index: 10;
+}
+
+.header .wpr-sub-mega-menu {
+  width: fit-content;
+}
+
+.megaMenuSubCat .subcategory-grid a.subcategory-card img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rental-solutions-and-commercial-vehicles.material-handling .megaMenuSubCat .subcategory-grid a.subcategory-card img {
+  mix-blend-mode: multiply;
+}
+
+.megaMenuSubCat .subcategory-grid a.subcategory-card .subcategory-image {
+  width: 5.063rem !important;
+  height: 3.75rem;
+}
+
+.megaMenuSubCat .subcategory-grid a.subcategory-card h3 {
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+  transition: all 0.4s ease-out;
+}
+
+.komatsu .megaMenuSubCat .subcategory-grid a.subcategory-card h3 {
+  color: var(--komatsu) !important;
+}
+
+.komatsu .megaMenuSubCat .subcategory-grid a.subcategory-card:hover {
+  background: var(--komatsu);
+}
+
+.komatsu .megaMenuSubCat .subcategory-grid a.subcategory-card:hover h3 {
+  color: white !important;
+}
+
+.machinery-power-products .wpr-sub-mega-menu {
+  left: -21rem !important;
+  transform: translateY(2rem) !important;
+}
+
+.komatsu .wpr-sub-mega-menu {
+  left: -21rem !important;
+  transform: translateY(2rem) !important;
+}
+
+.powerscreen .wpr-sub-mega-menu {
+  left: -16.3rem !important;
+  transform: translateY(2rem) !important;
+}
+
+.teksan .megaMenuSubCat .subcategory-grid a.subcategory-card:hover {
+  background: var(--teksan);
+}
+
+.teksan .megaMenuSubCat .subcategory-grid a.subcategory-card:hover h3 {
+  color: white !important;
+}
+
+.mds .megaMenuSubCat .subcategory-grid a.subcategory-card:hover {
+  background: var(--mds);
+}
+
+.mds .megaMenuSubCat .subcategory-grid a.subcategory-card:hover h3 {
+  color: white !important;
+}
+
+.material-handling-warehousing-and-industrial-products .wpr-sub-mega-menu {
+  left: -19rem !important;
+  transform: translateY(2rem) !important;
+}
+
+.headerCat.header .col-2 .innerCol1 img {
+  width: 13.375rem;
+}
+
+.powerscreen .bg-sec {
+  background: var(--powerscreen) !important;
+}
+
+.powerscreen .contactBtn a {
+  background: #32979e !important;
+}
+
+.contactBtn {
+  height: 100%;
+}
+
+.powerscreen .headerCat.header .col-2 .innerCol1 img {
+  width: 9.375rem;
+}
+
+.powerscreen .subCatSec .elementor-grid li a:hover h2 {
+  background: var(--powerscreen);
+}
+
+.powerscreen .relatedCat .main-category-grid a:hover .category-card-content {
+  background: #32979e;
+}
+
+.powerscreen .brandsSec {
+  background: #d7f2f4;
+}
+
+.filterCard img {
+  height: 30rem !important;
+}
+
+.filterCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.komatsu .filterCard:before {
+  background: rgb(20 10 154 / 40%);
+}
+
+.powerscreen .filterCard:before {
+  background: rgb(39 129 136 / 40%);
+}
+
+.powerscreen .productsFilterSec .col-1 h3 {
+  background: var(--powerscreen);
+}
+
+.woocommerce-loop-category__title mark {
+  display: none;
+}
+
+.powerscreen .productsGridGlobalStyled .elementor-widget-button a {
+  background: var(--powerscreen);
+}
+
+.powerscreen .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: #3ea0a9;
+}
+
+.powerscreen .productsGridGlobalStyled h3 a {
+  color: var(--powerscreen) !important;
+}
+
+.productsGridGlobalStyled .card:hover h3 a {
+  color: #32979e !important;
+}
+
+.productsGridGlobalStyled .card:hover h3 a:before {
+  background: #32979e;
+}
+
+.powerscreen .global-btn a {
+  border-color: var(--powerscreen);
+}
+
+.powerscreen .global-btn a:hover {
+  background: var(--powerscreen) !important;
+}
+
+.powerscreen .global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  background: var(--powerscreen);
+}
+
+.powerscreen .productSpecs .col-2 h2 {
+  color: var(--powerscreen) !important;
+}
+
+.powerscreen .productSpecs ul.flex-direction-nav li a.flex-next {
+  background: var(--powerscreen);
+}
+
+.powerscreen .productSpecs ul.flex-direction-nav li a.flex-prev:hover {
+  background: var(--powerscreen);
+}
+
+.powerscreen .productSpecs ul.flex-direction-nav li a.flex-prev:hover:before {
+  filter: none;
+}
+
+.powerscreen .btnsProducts a {
+  background: var(--powerscreen);
+}
+
+.powerscreen .btnsProducts a span.elementor-button-icon {
+  background: #3ea0a9;
+}
+
+.powerscreen .btnsProducts a:hover {
+  background: #3ea0a9;
+}
+
+.powerscreen .btnsProducts {
+  background: #ebf1f3;
+}
+
+.powerscreen .subCatProductsGrid .subcategory-grid a {
+  background: #f6fafa;
+}
+
+.powerscreen .productsGridGlobalStyled .elementor-swiper-button-prev.swiper-button-disabled {
+  background: #95b5ad;
+}
+
+.powerscreen .productsGridGlobalStyled .elementor-swiper-button-prev {
+  background: var(--powerscreen);
+}
+
+.powerscreen .productsGridGlobalStyled .elementor-swiper-button-next {
+  background: var(--powerscreen);
+}
+
+.powerscreen .productsGridGlobalStyled .elementor-swiper-button-prev:hover {
+  background: var(--powerscreen);
+}
+
+.powerscreen .megaMenuSubCat .subcategory-grid a.subcategory-card h3 {
+  color: var(--powerscreen) !important;
+}
+
+.powerscreen .megaMenuSubCat .subcategory-grid a.subcategory-card:hover {
+  background: var(--powerscreen);
+}
+
+.powerscreen .megaMenuSubCat .subcategory-grid a.subcategory-card:hover h3 {
+  color: white !important;
+}
+
+.powerscreen.machinery-power-products .wpr-sub-mega-menu {
+  left: -17rem !important;
+  transform: translateY(2rem) !important;
+}
+
+.material-handling-warehousing-and-industrial-products .bg-sec {
+  background: var(--toyota) !important;
+}
+
+.material-handling-warehousing-and-industrial-products .contactBtn a {
+  background: #111212 !important;
+}
+
+.material-handling-warehousing-and-industrial-products .headerCat.header .col-2 .innerCol1 img {
+  width: 11.438rem;
+}
+
+.material-handling-warehousing-and-industrial-products .innerPageHero .pageTitle h1 {
+  width: 56.875rem;
+}
+
+.material-handling-warehousing-and-industrial-products .relatedCat .category-card-content {
+  background: #111212;
+}
+
+.material-handling-warehousing-and-industrial-products .relatedCat a:hover .category-card-content {
+  background: #b22823;
+}
+
+.material-handling-warehousing-and-industrial-products .subCatSec .elementor-grid li a:hover h2 {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .megaMenuSubCat .subcategory-grid a.subcategory-card h3 {
+  color: #111212 !important;
+}
+
+.material-handling-warehousing-and-industrial-products .megaMenuSubCat .subcategory-grid a.subcategory-card:hover {
+  background: #333333;
+}
+
+.material-handling-warehousing-and-industrial-products .megaMenuSubCat .subcategory-grid a.subcategory-card:hover h3 {
+  color: white !important;
+}
+
+.material-handling-warehousing-and-industrial-products .brandsSec {
+  display: none;
+}
+
+.material-handling-warehousing-and-industrial-products .filterCard:before {
+  background: rgb(235 10 30 / 40%);
+}
+
+.material-handling-warehousing-and-industrial-products .productsFilterSec .col-1 h3 {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled .elementor-widget-button a {
+  background: #111212;
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled h3 a {
+  color: #111212 !important;
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled h3 a:before {
+  background: #111212 !important;
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled .card:hover h3 a {
+  color: #111212 !important;
+}
+
+.material-handling-warehousing-and-industrial-products .global-btn a {
+  border-color: #111212;
+}
+
+.material-handling-warehousing-and-industrial-products .global-btn a:hover {
+  background: #111212 !important;
+}
+
+.material-handling-warehousing-and-industrial-products .global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  background: #111212;
+}
+
+.material-handling-warehousing-and-industrial-products .productSpecs .col-2 h2 {
+  color: var(--toyota) !important;
+}
+
+.material-handling-warehousing-and-industrial-products .productSpecs ul.flex-direction-nav li a.flex-next {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .productSpecs ul.flex-direction-nav li a.flex-prev:hover {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .productSpecs ul.flex-direction-nav li a.flex-prev:hover:before {
+  filter: none;
+}
+
+.material-handling-warehousing-and-industrial-products .btnsProducts a {
+  background: #111212;
+}
+
+.material-handling-warehousing-and-industrial-products .btnsProducts a span.elementor-button-icon {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .btnsProducts a:hover {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .btnsProducts {
+  background: #f2f5f7;
+}
+
+.material-handling-warehousing-and-industrial-products .subCatProductsGrid .subcategory-grid a {
+  background: #f2edee;
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled .elementor-swiper-button-prev.swiper-button-disabled {
+  background: #95b5ad;
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled .elementor-swiper-button-prev {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled .elementor-swiper-button-next {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled .elementor-swiper-button-prev:hover {
+  background: var(--toyota);
+}
+
+.material-handling-warehousing-and-industrial-products .subCatProductsGrid .subcategory-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.material-handling-warehousing-and-industrial-products .subCatProductsGrid .subcategory-grid a {
+  padding: 2rem 1.781rem;
+}
+
+.productSpecs .elementor-tab-title {
+  padding: 1.25rem 2.5rem !important;
+  width: fit-content !important;
+  background: transparent;
+  font-size: 1.25rem !important;
+  font-family: "Karbon" !important;
+  font-weight: 400 !important;
+  color: var(--char) !important;
+  border: 0.063rem solid #232323 !important;
+  border-bottom: 0 !important;
+}
+
+.productSpecs .elementor-tabs-wrapper {
+  border-bottom: 0.063rem solid #000000;
+}
+
+.productSpecs .elementor-tab-title.elementor-active {
+  background: #232323;
+  color: white !important;
+  border-color: #232323 !important;
+}
+
+.custom-product-tabs ul.tabs-nav {
+  padding: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.063rem solid #000000;
+  display: flex;
+}
+
+.custom-product-tabs ul.tabs-nav li {
+  list-style: none;
+  padding: 1.25rem 2.5rem !important;
+  width: fit-content !important;
+  background: transparent;
+  font-size: 1.25rem !important;
+  font-family: "Karbon" !important;
+  font-weight: 400 !important;
+  color: var(--char) !important;
+  border: 0.063rem solid #232323 !important;
+  border-bottom: 0 !important;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.custom-product-tabs ul.tabs-nav li.active,
+.custom-product-tabs ul.tabs-nav li.hover {
+  background: #232323;
+  color: white !important;
+  border-color: #232323 !important;
+}
+
+.custom-product-tabs .tabs-content .tab {
+  display: none;
+}
+
+.custom-product-tabs .tabs-content .tab.active {
+  display: block;
+}
+
+.productSpecs .custom-product-tabs strong {
+  display: flex;
+  color: #111212;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.productSpecs .custom-product-tabs li {
+  font-size: 1.25rem;
+  font-family: "Karbon" !important;
+  color: #616163;
+}
+
+.productSpecs .elementor-tab-content strong:nth-child(1) {
+  margin-top: 0 !important;
+}
+
+.productSpecs .custom-product-tabs #tab-description ul {
+  /*   padding: 0; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.productSpecs .custom-product-tabs #tab-description ul li {
+  position: relative;
+  /*   padding-left: calc(0.591rem + 1.25rem) !important; */
+}
+
+.productSpecs .custom-product-tabs #tab-description ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(/wp-content/uploads/2025/12/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 0.591rem;
+  height: 0.591rem;
+  filter: brightness(0) saturate(100%) invert(15%) sepia(84%) saturate(5229%) hue-rotate(350deg) brightness(89%) contrast(110%);
+  display: none;
+}
+
+.productSpecs .elementor-tab-content {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.productSpecs .elementor-tabs-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.product-specs .spec-item:nth-child(1) {
+  padding-top: 0;
+}
+
+.productSpecs .elementor-tab-content strong {
+  display: flex;
+  color: #111212;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.productSpecs .elementor-tab-content {
+  font-size: 1.25rem;
+  font-family: "Karbon" !important;
+  color: #616163;
+}
+
+.productSpecs .elementor-tab-content strong:nth-child(1) {
+  margin-top: 0 !important;
+}
+
+.productSpecs .elementor-tab-content ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.productSpecs .elementor-tab-content ul li {
+  list-style: none;
+  position: relative;
+  padding-left: calc(0.591rem + 1.25rem) !important;
+}
+
+.productSpecs .elementor-tab-content ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(/wp-content/uploads/2025/12/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 0.591rem;
+  height: 0.591rem;
+  filter: brightness(0) saturate(100%) invert(15%) sepia(84%) saturate(5229%) hue-rotate(350deg) brightness(89%) contrast(110%);
+}
+
+.rental-solutions-and-commercial-vehicles .bg-sec {
+  background: var(--rental) !important;
+}
+
+.rental-solutions-and-commercial-vehicles .header {
+  background: var(--rental);
+}
+
+.rental-solutions-and-commercial-vehicles .header ul li a {
+  color: white !important;
+}
+
+.rental-solutions-and-commercial-vehicles .header ul li a i:before {
+  background: white !important;
+}
+
+.rental-solutions-and-commercial-vehicles .header .col-3 img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(311deg) brightness(101%) contrast(102%);
+}
+
+.rental-solutions-and-commercial-vehicles .contactBtn a {
+  background: #111212 !important;
+}
+
+.rental-solutions-and-commercial-vehicles .subCatSec .elementor-grid h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+  color: white !important;
+  font-weight: 700 !important;
+  transition: all 0.4s ease-out;
+  z-index: 3;
+  padding: 2.5rem 2rem !important;
+}
+
+.rental-solutions-and-commercial-vehicles .subCatSec .elementor-grid h2:before {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(311deg) brightness(101%) contrast(102%);
+  transform: translateY(-50%) rotate(0) !important;
+}
+
+.subCatSec .elementor-grid li a {
+  position: relative;
+}
+
+.rental-solutions-and-commercial-vehicles .subCatSec .elementor-grid li a:before {
+  content: "";
+  background: linear-gradient(360deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.rental-solutions-and-commercial-vehicles .subCatSec .elementor-grid h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--rental);
+  transition: all 0.4s ease-out;
+  z-index: -1;
+  top: 0;
+}
+
+.rental-solutions-and-commercial-vehicles .subCatSec .elementor-grid a:hover h2:after {
+  width: 100%;
+}
+
+.rental-solutions-and-commercial-vehicles .relatedCat .category-card-content {
+  background: black;
+}
+
+.rental-solutions-and-commercial-vehicles .relatedCat a:hover .category-card-content {
+  background: #cc4c1f;
+}
+
+.rental-solutions-and-commercial-vehicles .productsFilterSec .col-1 h3 {
+  background: var(--rental);
+}
+
+.rental-solutions-and-commercial-vehicles .filterCard:before {
+  background: rgb(242 94 24 / 40%);
+}
+
+.rental-solutions-and-commercial-vehicles .brandsSec {
+  display: none;
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled .elementor-widget-button a {
+  background: #111212;
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: var(--rental);
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled h3 a {
+  color: #111212 !important;
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled h3 a:before {
+  background: #111212 !important;
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled .card:hover h3 a {
+  color: #111212 !important;
+}
+
+.productSpecs section .elementor-container {
+  justify-content: space-between;
+}
+
+body.rental-solutions-and-commercial-vehicles .productSpecs .col-2 h2 {
+  color: #111212 !important;
+}
+
+.productSpecs .form .row p span {
+  width: 48% !important;
+}
+
+.productSpecs .form .row p {
+  flex-direction: row;
+}
+
+.productSpecs .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.productSpecs .form br {
+  display: none;
+}
+
+.productSpecs .form textarea {
+  margin: 0;
+  height: 6.313rem;
+}
+
+.productSpecs .form input,
+.productSpecs .form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 0.063rem solid #111212;
+  border-radius: 0;
+  padding: 1rem 0;
+}
+
+.productSpecs .form input::placeholder,
+.productSpecs .form textarea::placeholder {
+  color: #b1aca0 !important;
+}
+
+.productSpecs .form .submit p input {
+  color: var(--char);
+  border-color: var(--char);
+  width: 25.875rem;
+}
+
+.productSpecs .form .arrow {
+  background: #111212;
+  border: 0.063rem solid #111212;
+}
+
+.productSpecs .form .arrow img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(311deg) brightness(101%) contrast(102%);
+}
+
+.productSpecs .form .submit {
+  margin: 0;
+  width: 25.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.productSpecs .form .submit:hover input {
+  background: var(--rental);
+  color: white !important;
+  border-color: var(--rental);
+}
+
+.productSpecs .form .submit:hover .arrow {
+  background: var(--rental) !important;
+  border-color: var(--rental) !important;
+}
+
+.rental-solutions-and-commercial-vehicles .productSpecs ul.flex-direction-nav li a.flex-next {
+  background: var(--rental);
+}
+
+.rental-solutions-and-commercial-vehicles .productSpecs ul.flex-direction-nav li a.flex-prev:hover {
+  background: var(--rental);
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled .elementor-swiper-button-next {
+  background: var(--rental);
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled .elementor-swiper-button-prev:hover {
+  background: var(--rental);
+}
+
+.teksan .bg-sec {
+  background: var(--teksan) !important;
+}
+
+.teksan .contactBtn a {
+  background: #a7a9ac !important;
+}
+
+.teksan .headerCat.header .col-2 .innerCol1 img {
+  width: 11.25rem;
+}
+
+.teksan .subCatSec .elementor-grid a:hover h2 {
+  background: var(--teksan);
+}
+
+.teksan .relatedCat .main-category-grid a:hover .category-card-content {
+  background: #253fc8;
+}
+
+.teksan .productsFilterSec .col-1 h3 {
+  background: var(--teksan);
+}
+
+.teksan .productsGridGlobalStyled .elementor-widget-button a {
+  background: var(--teksan);
+}
+
+.teksan .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: #3158b0 !important;
+}
+
+.teksan .filterCard:before {
+  background: rgb(30 54 108 / 40%);
+}
+
+.teksan .productsGridGlobalStyled h3 a {
+  color: var(--teksan) !important;
+}
+
+.teksan .productsGridGlobalStyled .card:hover h3 a {
+  color: var(--teksan) !important;
+}
+
+.teksan .productsGridGlobalStyled h3 a:before {
+  background: var(--teksan) !important;
+}
+
+.teksan .global-btn a {
+  border-color: var(--teksan);
+}
+
+.teksan .subCatProductsGrid {
+  display: none;
+}
+
+.teksan .global-btn a:hover {
+  background: var(--teksan) !important;
+}
+
+.teksan .global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  background: var(--teksan);
+}
+
+.teksan .productSpecs .col-2 h2 {
+  color: var(--teksan) !important;
+}
+
+.teksan .productSpecs ul.flex-direction-nav li a.flex-next {
+  background: var(--teksan);
+}
+
+.teksan .productSpecs ul.flex-direction-nav li a.flex-prev:hover {
+  background: var(--teksan);
+}
+
+.teksan .productSpecs ul.flex-direction-nav li a.flex-prev:hover:before {
+  filter: none;
+}
+
+.teksan .btnsProducts a {
+  background: #3158b0;
+}
+
+.teksan .btnsProducts a span.elementor-button-icon {
+  background: var(--teksan);
+}
+
+.teksan .btnsProducts a:hover {
+  background: var(--teksan);
+}
+
+.teksan .btnsProducts {
+  background: #f2f5f7;
+}
+
+.teksan .subCatProductsGrid .subcategory-grid a {
+  /*   background: #f2edee; */
+  background: #fff;
+}
+
+.teksan .productsGridGlobalStyled .elementor-swiper-button-prev.swiper-button-disabled {
+  background: #95b5ad;
+}
+
+.teksan .productsGridGlobalStyled .elementor-swiper-button-prev {
+  background: var(--teksan);
+}
+
+.teksan .productsGridGlobalStyled .elementor-swiper-button-next {
+  background: var(--teksan);
+}
+
+.teksan .productsGridGlobalStyled .elementor-swiper-button-prev:hover {
+  background: var(--teksan);
+}
+
+.mds .bg-sec {
+  background: var(--mds) !important;
+}
+
+.mds .contactBtn a {
+  background: #d15353 !important;
+}
+
+.mds .headerCat.header .col-2 .innerCol1 img {
+  width: 7.625rem;
+}
+
+.mds .subCatSec .elementor-grid a:hover h2 {
+  background: var(--mds);
+}
+
+.mds .brandsSec {
+  background: #b8e8dd;
+}
+
+.mds .relatedCat .category-card-content {
+  background: black;
+}
+
+.mds .relatedCat a:hover .category-card-content {
+  background: #d15353;
+}
+
+.mds .productsFilterSec .col-1 h3 {
+  background: var(--mds);
+}
+
+.mds .productsGridGlobalStyled .elementor-widget-button a {
+  background: var(--mds);
+}
+
+.mds .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: #d15353 !important;
+}
+
+.mds .filterCard:before {
+  background: rgb(173 29 29 / 40%);
+}
+
+.mds .productsGridGlobalStyled h3 a {
+  color: var(--mds) !important;
+}
+
+.mds .productsGridGlobalStyled .card:hover h3 a {
+  color: var(--mds) !important;
+}
+
+.mds .productsGridGlobalStyled h3 a:before {
+  background: var(--mds) !important;
+}
+
+.mds .global-btn a {
+  border-color: var(--mds);
+}
+
+.mds .global-btn a:hover {
+  background: var(--mds) !important;
+}
+
+.mds .global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  background: var(--mds);
+}
+
+.mds .productSpecs .col-2 h2 {
+  color: var(--mds) !important;
+}
+
+.mds .productSpecs ul.flex-direction-nav li a.flex-next {
+  background: var(--mds);
+}
+
+.mds .productSpecs ul.flex-direction-nav li a.flex-prev:hover {
+  background: var(--mds);
+}
+
+.mds .productSpecs ul.flex-direction-nav li a.flex-prev:hover:before {
+  filter: none;
+}
+
+.mds .btnsProducts a {
+  background: var(--mds);
+}
+
+.mds .btnsProducts a span.elementor-button-icon {
+  background: #d15353;
+}
+
+.mds .btnsProducts a:hover {
+  background: #d15353;
+}
+
+.mds .btnsProducts {
+  background: #f2f5f7;
+}
+
+.mds .subCatProductsGrid .subcategory-grid a {
+  background: #f2edee;
+}
+
+.mds .productsGridGlobalStyled .elementor-swiper-button-prev.swiper-button-disabled {
+  background: #95b5ad;
+}
+
+.mds .productsGridGlobalStyled .elementor-swiper-button-prev {
+  background: var(--mds);
+}
+
+.mds .productsGridGlobalStyled .elementor-swiper-button-next {
+  background: var(--mds);
+}
+
+.mds .productsGridGlobalStyled .elementor-swiper-button-prev:hover {
+  background: var(--mds);
+}
+
+.terex .bg-sec {
+  background: var(--terex) !important;
+}
+
+.terex .contactBtn a {
+  background: #fb5454 !important;
+}
+
+.terex .headerCat.header .col-2 .innerCol1 img {
+  width: 15.438rem;
+}
+
+.terex .subCatSec .elementor-grid li a:hover h2 {
+  background: var(--terex) !important;
+}
+
+.terex .brandsSec {
+  background: #b8e8dd;
+}
+
+.terex .relatedCat .category-card-content {
+  background: black;
+}
+
+.terex .relatedCat a:hover .category-card-content {
+  background: #fb5454;
+}
+
+.terex .wpr-sub-mega-menu {
+  left: -22.8rem !important;
+}
+
+.wpr-sub-mega-menu {
+  transform: translateY(2rem) !important;
+}
+
+.terex .megaMenuSubCat .subcategory-grid a.subcategory-card h3 {
+  color: var(--terex) !important;
+}
+
+.terex .headerCat.header .col-2 ul li a:hover {
+  background: var(--terex) !important;
+}
+
+.terex .headerCat.header .col-2 ul li a:hover h3 {
+  color: white !important;
+}
+
+.terex .productsFilterSec .col-1 h3 {
+  background: var(--terex);
+}
+
+.terex .productsGridGlobalStyled .elementor-widget-button a {
+  background: var(--terex);
+}
+
+.terex .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: #fb5454 !important;
+}
+
+.terex .filterCard:before {
+  background: rgb(204 0 0 / 40%);
+}
+
+.terex .productsGridGlobalStyled h3 a {
+  color: var(--terex) !important;
+}
+
+.terex .productsGridGlobalStyled .card:hover h3 a {
+  color: var(--terex) !important;
+}
+
+.terex .productsGridGlobalStyled h3 a:before {
+  background: var(--terex) !important;
+}
+
+.terex .global-btn a {
+  border-color: var(--terex);
+}
+
+.terex .global-btn a:hover {
+  background: var(--terex) !important;
+}
+
+.terex .global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  background: var(--terex);
+}
+
+.terex .productSpecs .col-2 h2 {
+  color: var(--terex) !important;
+}
+
+.terex .productSpecs ul.flex-direction-nav li a.flex-next {
+  background: var(--terex);
+}
+
+.terex .productSpecs ul.flex-direction-nav li a.flex-prev:hover {
+  background: var(--terex);
+}
+
+.terex .productSpecs ul.flex-direction-nav li a.flex-prev:hover:before {
+  filter: none;
+}
+
+.terex .btnsProducts a {
+  background: var(--terex);
+}
+
+.terex .btnsProducts a span.elementor-button-icon {
+  background: #fb5454;
+}
+
+.terex .btnsProducts a:hover {
+  background: #fb5454;
+}
+
+.terex .btnsProducts {
+  background: #f2f5f7;
+}
+
+.terex .subCatProductsGrid .subcategory-grid a {
+  /*   background: #f2edee; */
+  background: #fff;
+}
+
+.terex .productsGridGlobalStyled .elementor-swiper-button-prev.swiper-button-disabled {
+  background: #95b5ad;
+}
+
+.terex .productsGridGlobalStyled .elementor-swiper-button-prev {
+  background: var(--terex);
+}
+
+.terex .productsGridGlobalStyled .elementor-swiper-button-next {
+  background: var(--terex);
+}
+
+.terex .productsGridGlobalStyled .elementor-swiper-button-prev:hover {
+  background: var(--terex);
+}
+
+.man .productsFilterSec .col-1 h3 {
+  background: var(--man);
+}
+
+.man .productsGridGlobalStyled .elementor-widget-button a {
+  background: var(--man);
+}
+
+.man .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: #303c49 !important;
+}
+
+.man .filterCard:before {
+  background: rgb(228 0 69 / 40%);
+}
+
+.man .productsGridGlobalStyled h3 a {
+  color: var(--man) !important;
+}
+
+.man .productsGridGlobalStyled .card:hover h3 a {
+  color: var(--man) !important;
+}
+
+.man .productsGridGlobalStyled h3 a:before {
+  background: var(--man) !important;
+}
+
+.man .global-btn a {
+  border-color: var(--man);
+}
+
+.man .global-btn a:hover {
+  background: var(--man) !important;
+}
+
+.man .global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  background: var(--man);
+}
+
+.man .productSpecs .col-2 h2 {
+  color: var(--man) !important;
+}
+
+.man .productSpecs ul.flex-direction-nav li a.flex-next {
+  background: var(--man);
+}
+
+.man .productSpecs ul.flex-direction-nav li a.flex-prev:hover {
+  background: var(--man);
+}
+
+.man .productSpecs ul.flex-direction-nav li a.flex-prev:hover:before {
+  filter: none;
+}
+
+.man .btnsProducts a {
+  background: var(--man);
+}
+
+.man .btnsProducts a span.elementor-button-icon {
+  background: #303c49;
+}
+
+.man .btnsProducts a:hover {
+  background: #303c49;
+}
+
+.man .btnsProducts {
+  background: #fce5ec;
+}
+
+.man .subCatProductsGrid .subcategory-grid a {
+  /*   background: #f2edee; */
+  background: #fff;
+}
+
+.man .productsGridGlobalStyled .elementor-swiper-button-prev {
+  background: #95b5ad;
+}
+
+.man .productsGridGlobalStyled .elementor-swiper-button-next {
+  background: var(--man);
+}
+
+.man .productsGridGlobalStyled .elementor-swiper-button-prev:hover {
+  background: var(--man);
+}
+
+.man .bg-sec {
+  background: var(--man) !important;
+}
+
+.man .headerCat.header .col-2 .innerCol1 img {
+  width: 6.625rem;
+}
+
+.man .contactBtn a {
+  background: #303c49 !important;
+}
+
+.man .subCatSec .elementor-grid li a:hover h2 {
+  background: var(--man);
+}
+
+.man .brandsSec {
+  background: #b8e8dd;
+}
+
+.man .relatedCat .category-card-content {
+  background: black;
+}
+
+.man .relatedCat a:hover .category-card-content {
+  background: #303c49;
+}
+
+.man .megaMenuSubCat .subcategory-grid a.subcategory-card h3 {
+  color: var(--man) !important;
+}
+
+.man .megaMenuSubCat .subcategory-grid a.subcategory-card:hover {
+  background: var(--man);
+}
+
+.man .megaMenuSubCat .subcategory-grid a.subcategory-card:hover h3 {
+  color: white !important;
+}
+
+.productSpecs .col-1 .flex-control-nav li {
+  list-style: none;
+}
+
+.productSpecs .col-2 strong {
+  font-weight: 500;
+  color: #111212;
+  margin-bottom: 1rem !important;
+  display: block;
+}
+
+/* Table CSS Start  */
+.wptb-table-container {
+  margin-top: 1.5rem !important;
+}
+
+.wptb-table-container img {
+  width: 1rem !important;
+}
+
+.wptb-table-container table {
+  border: none !important;
+}
+
+/* .wptb-preview-table tbody tr:nth-child(even) td > div {
+  background: #e400450a !important;
+} */
+
+.wptb-table-container tr.wptb-row {
+  background: transparent !important;
+}
+
+.wptb-table-container tr.wptb-row td {
+  background: transparent;
+  border: none !important;
+  padding: 0rem !important;
+  vertical-align: top !important;
+}
+
+.wptb-table-container tr.wptb-row td>div {
+  border: none !important;
+  padding: 0.625rem !important;
+  margin-right: 1.25rem !important;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.wptb-table-container tr.wptb-row td p strong {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.wptb-table-container tr.wptb-row td p {
+  font-size: 1rem !important;
+}
+
+.wptb-table-container tr.wptb-row td:last-child>div {
+  margin: 0 !important;
+}
+
+.wptb-preview-table tbody tr:nth-child(even) td:before {
+  content: "";
+  background: #e400450a !important;
+  width: calc(100% - 1.25rem);
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+.man-tabs ul {
+  display: flex;
+  padding: 0;
+}
+
+.man-tabs ul li {
+  list-style: none;
+  padding: 1.25rem 2.5rem !important;
+  width: fit-content !important;
+  background: transparent;
+  font-size: 1.25rem !important;
+  font-family: "Karbon" !important;
+  font-weight: 400 !important;
+  color: #232323 !important;
+  border: 0.063rem solid #232323 !important;
+  border-bottom: 0 !important;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+.man-tabs ul li:hover,
+.man-tabs ul li.active {
+  background: #232323;
+  color: white !important;
+  border-color: #232323 !important;
+}
+
+.man-tabs ul {
+  border-bottom: 0.063rem solid #232323 !important;
+}
+
+.tableData {
+  display: none;
+}
+
+.tableData.active {
+  display: block;
+}
+
+table.wptb-preview-table {
+  width: 100% !important;
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+.wptb-table-container tr.wptb-row:first-child td>div {
+  height: auto !important;
+}
+
+/* Table CSS End  */
+
+/* Pagination Start  */
+.productsFilterSec nav.elementor-pagination {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productsFilterSec nav.elementor-pagination .page-numbers {
+  width: 3.125rem;
+  height: 3.125rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 0.063rem solid #b1aca040;
+  color: #111212 !important;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.4s ease-out;
+}
+
+.material-handling-warehousing-and-industrial-products .productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.material-handling-warehousing-and-industrial-products .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--toyota);
+  border-color: var(--toyota);
+}
+
+.productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.productsFilterSec nav.elementor-pagination .page-numbers.current {
+  color: white !important;
+}
+
+.komatsu .productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.komatsu .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--komatsu);
+  border-color: var(--komatsu);
+}
+
+.powerscreen .productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.powerscreen .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--powerscreen);
+  border-color: var(--powerscreen);
+}
+
+.teksan .productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.teksan .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--teksan);
+  border-color: var(--teksan);
+}
+
+.mds .productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.mds .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--mds);
+  border-color: var(--mds);
+}
+
+.terex .productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.terex .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--terex);
+  border-color: var(--terex);
+}
+
+.man .productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.man .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--man);
+  border-color: var(--man);
+}
+
+.rental-solutions-and-commercial-vehicles .productsFilterSec nav.elementor-pagination .page-numbers:hover,
+.rental-solutions-and-commercial-vehicles .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--rental);
+  border-color: var(--rental);
+}
+
+/* Pagination End  */
+
+/* Mega Menu Start  */
+.aboutMega .wpr-sub-mega-menu {
+  left: -8.5rem !important;
+}
+
+.headerMain .wpr-sub-mega-menu {
+  width: 75rem !important;
+  border: none !important;
+}
+
+.mainMegaMenu {
+  padding: 2.5rem;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+}
+
+.mainMegaMenu>.elementor-container {
+  display: grid !important;
+}
+
+.mainMegaMenu>.elementor-container>.elementor-column {
+  width: 100% !important;
+  position: relative;
+}
+
+.mainMegaMenu.aboutMegaWrapper>.elementor-container {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.188rem;
+	row-gap:3rem;
+}
+
+.mainMegaMenu p strong {
+  color: var(--char);
+  font-size: 1.25rem !important;
+  line-height: 1.3 !important;
+  margin-bottom: 0.5rem !important;
+  display: block;
+  font-weight: 500;
+}
+
+.mainMegaMenu p {
+  font-size: 1rem !important;
+}
+
+.mainMegaMenu p:last-child {
+  /*   display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  min-height: 3rem;
+}
+
+.header ul li .mainMegaMenu .variant-btn a {
+  font-weight: 400 !important;
+  font-size: 1rem;
+}
+
+.mainMegaMenu .variant-btn {
+  margin-top: 2rem;
+}
+
+.mainMegaMenu>.elementor-container>.elementor-column:before {
+  content: "";
+  height: 100%;
+  width: 0.063rem;
+  position: absolute;
+  background: var(--char);
+  opacity: 0.1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.aboutMegaWrapper.mainMegaMenu>.elementor-container>.elementor-column:before {
+  right: -2rem;
+}
+
+.mainMegaMenu>.elementor-container>.elementor-column:last-child:before {
+  display: none;
+}
+
+.productsMega .wpr-sub-mega-menu {
+  left: -15.3rem !important;
+}
+
+.mainMegaMenu.productMegaWrapper>.elementor-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.25rem;
+}
+
+.productMegaWrapper.mainMegaMenu>.elementor-container>.elementor-column:before {
+  right: -3.125rem;
+}
+
+.supportMega .wpr-sub-mega-menu {
+  left: -22rem !important;
+}
+
+.mainMegaMenu.supportMegaWrapper>.elementor-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.25rem;
+  row-gap: 2.5rem;
+}
+
+.supportMegaWrapper.mainMegaMenu>.elementor-container>.elementor-column:before {
+  right: -3.125rem;
+}
+
+.techMega .wpr-sub-mega-menu {
+  left: -33.3rem !important;
+}
+
+.value-content-wrapper img {
+  height: 100% !important;
+}
+
+.mainMegaMenu.techMegaWrapper>.elementor-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.25rem;
+}
+
+.techMegaWrapper.mainMegaMenu>.elementor-container>.elementor-column:before {
+  right: -3.125rem;
+}
+
+/* Mega Menu End  */
+
+/* Popup Start  */
+
+.dialog-message {
+  width: 59.039rem !important;
+}
+
+
+#elementor-popup-modal-4969 .dialog-message {
+  width: 100% !important;
+}
+
+.popupHome {
+  padding: 2.254rem;
+  padding-top: 4.294rem;
+}
+
+.popupTop .col-1,
+.popupTop .col-2 {
+  width: 49% !important;
+}
+
+.popupTop>.elementor-container {
+  justify-content: space-between;
+}
+
+.popupTop .col-1 p strong {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #232323;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.popupHome svg path {
+  fill: white;
+}
+
+.popupHome svg {
+  width: 0.8rem !important;
+}
+
+.popupBottom img {
+  height: 14.328rem !important;
+  object-fit: cover;
+}
+
+.popupTop .col-1 h2 {
+  background: var(--primary);
+  padding: 1rem;
+  margin-bottom: 0.5rem !important;
+  font-weight: 600 !important;
+}
+
+.popupTop .col-2 p strong {
+  display: block;
+  font-family: "Luma";
+  color: #232323;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.popupTop .col-2 p {
+  font-family: "Luma" !important;
+  color: #616163 !important;
+  font-size: 1.125rem !important;
+  font-weight: 400;
+}
+
+.elementor-popup-modal .dialog-close-button svg {
+  width: 1.718rem !important;
+  height: 1.718rem !important;
+  fill: #232323 !important;
+}
+
+/* Popup End  */
+
+p#breadcrumbs .shop,
+p#breadcrumbs .chev-shop {
+  display: none;
+}
+
+.locationBorder .elementor-widget-heading {
+  border-left: 0.063rem solid #d8d8d8;
+  border-right: 0.063rem solid #d8d8d8;
+}
+
+.locationBorder .elementor-widget-icon-list {
+  border: 0.063rem solid #d8d8d8;
+  border-top: 0;
+}
+
+.thankYou section p {
+  color: black;
+  margin-top: 1rem !important;
+}
+
+.thankYou section {
+  width: 41.813rem !important;
+  margin: 0 auto;
+}
+
+.thankYou img {
+  width: 37.625rem !important;
+}
+
+.global-btn.secColor svg {
+  width: 0.75rem;
+  transition: all 0.4s ease-out;
+}
+
+.global-btn.secColor a:hover svg {
+  transform: rotate(45deg);
+}
+
+.rtl .global-btn.secColor svg {
+  transform: rotate(-90deg);
+}
+
+.rtl .global-btn.secColor a:hover svg {
+  transform: rotate(-135deg);
+}
+
+.thankYou .sent img {
+  width: 22.563rem !important;
+}
+
+.thankYou h2, .thankYou p {
+  text-align: center !important;
+}
+
+.global-btn.secColor a {
+  padding-right: 4.25rem;
+}
+
+/* Abdullah CSS Start */
+
+section.value-content-wrapper .elementor-container .elementor-column:first-child {
+  padding-right: 5rem;
+}
+
+section.value-content-wrapper.value-content-wrapper-even {
+  background-color: #fff;
+}
+
+.locations-grid-wrapper .elementor-column .elementor-widget-wrap {
+  background-color: #fff;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.locations-grid-wrapper .elementor-column .elementor-widget-wrap .elementor-element.elementor-widget-heading {
+  padding: 1.875rem 1.5rem 1.25rem;
+}
+
+.locations-grid-wrapper .elementor-column .elementor-widget-wrap .elementor-element.elementor-widget-icon-list {
+  padding: 0 1.5rem 1.875rem;
+}
+
+.locations-grid-wrapper .elementor-column .elementor-widget-wrap .elementor-element.elementor-widget-heading h2 {
+  font-family: "Karbon" !important;
+  font-weight: 500 !important;
+  font-size: 1.375rem !important;
+}
+
+/* .locations-map-wrapper
+  .elementor-element.locations-map-text
+  p:not(.wpsl-gmap-canvas *) {
+  display: none;
+} */
+
+.wpsl-search {
+  display: none;
+}
+
+.wpsl-direction-wrap {
+  font-size: 1.25rem !important;
+  font-family: "Karbon" !important;
+  font-weight: 400 !important;
+/*   color: white; */
+}
+
+/* #wpsl-wrap #wpsl-result-list ul li.rental {
+  background: var(--rental) !important;
+} */
+
+/* .wpsl-store-details.wpsl-store-listing:before, .wpsl-store-details.wpsl-store-listing.wpsl-active-details:before {
+  border-top-color: white;
+} */
+
+/* #wpsl-wrap #wpsl-result-list ul li.materials {
+  background: var(--toyota) !important;
+} */
+
+/* #wpsl-wrap #wpsl-result-list ul li.machinery,#wpsl-wrap #wpsl-result-list ul li.heavy {
+  background: var(--primary);
+} */
+
+.wpsl-direction-wrap a {
+  text-decoration: underline !important;
+/*   color: white !important; */
+}
+
+.wpsl-info-window span strong {
+  font-size: 1rem !important;
+  font-family: "Karbon" !important;
+  font-weight: 600 !important;
+  color: var(--gray);
+}
+
+.wpsl-info-window span a {
+  font-size: 1rem !important;
+  font-family: "Karbon" !important;
+  text-decoration: underline !important;
+  font-weight: 400 !important;
+}
+
+.wpsl-info-actions a {
+  font-size: 1rem !important;
+  font-family: "Karbon" !important;
+  text-decoration: underline !important;
+  font-weight: 400 !important;
+}
+
+.wpsl-info-window p, .wpsl-info-window a {
+  font-size: 1rem !important;
+}
+
+.locations-map-wrapper .elementor-element.locations-map-text .wpsl-gmap-canvas {
+  margin-bottom: 0;
+}
+
+.locations-grid-wrapper img {
+  width: 100%;
+}
+
+.locations-grid-wrapper .elementor-container {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.locations-grid-wrapper .elementor-container .elementor-column {
+  width: 100%;
+}
+
+.locations-grid-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.locations-grid-wrapper ul li span.elementor-icon-list-text {
+  font-size: 1.125rem;
+  color: #212121;
+  font-weight: 400;
+}
+
+.locations-grid-wrapper ul li svg {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
+
+.locations-grid-wrapper iframe {
+  height: 16rem !important;
+}
+
+/* Contact Us */
+
+.contact-us-form-wrapper .form .row {
+  display: flex;
+  width: 100%;
+}
+
+.contact-us-form-wrapper .form .row .col-6 {
+  width: 50%;
+}
+
+.contact-us-form-wrapper .form .row .col-12 {
+  width: 100%;
+}
+
+.contact-us-form-wrapper .form .row .col {
+  padding: 0 0.625rem 1rem;
+}
+
+.radio-btn-wrapper.inline-radio-wrapper span.wpcf7-form-control span.wpcf7-list-item {
+  width: 50%;
+}
+
+.radio-btn-wrapper.inline-radio-wrapper span.wpcf7-form-control span.wpcf7-list-item label {
+  background-color: #b1aca040;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.radio-btn-wrapper span.wpcf7-form-control span.wpcf7-list-item label span.wpcf7-list-item-label {
+  padding-left: 0.75rem;
+  color: #232323;
+  line-height: 1.2;
+}
+
+.radio-btn-wrapper.inline-radio-wrapper span.wpcf7-form-control {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.contact-us-form-wrapper .form .wpcf7-form-control-wrap input,
+.contact-us-form-wrapper .form .wpcf7-form-control-wrap select,
+.contact-us-form-wrapper .form .wpcf7-form-control-wrap textarea {
+  border: 0;
+  border-bottom: 0.063rem solid #111212;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+}
+
+.radio-label {
+  margin-bottom: 1.25rem;
+}
+
+.contact-us-form-wrapper .form .wpcf7-form-control-wrap input[type="checkbox"] {
+  border: 0.063rem solid #327585;
+  color: #327585 !important;
+  margin-right: 0.875rem;
+}
+
+.teksan .bg-sec-3 {
+  background: #dfdfdf;
+}
+
+.contact-us-form-wrapper .form .submit {
+  border: 0.125rem solid #327585;
+  margin: 0 auto;
+}
+
+.contact-us-form-wrapper .form .row .col.pb-0 {
+  margin-bottom: 1rem;
+}
+
+.contact-radio {
+  margin-bottom: 1rem !important;
+}
+
+.contact-us-form-wrapper .form .submit input.wpcf7-submit {
+  color: #4d4e4d;
+  min-width: 12.5rem;
+  border: 0;
+}
+
+.contact-us-form-wrapper .form .submit .arrow {
+  background-color: #327585;
+  border: 0;
+}
+
+.contact-us-form-wrapper .form .submit .arrow img {
+  filter: brightness(100);
+}
+
+.form select {
+  font-size: 1.25rem;
+}
+
+.contact-info-wrapper a {
+  color: #327585;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.contact-info-wrapper p {
+  color: #4d4e4d;
+}
+
+/* Contact Us */
+
+/*  News and Media  */
+
+.highlightedPostSec {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.highlightedPostSec .elementor-element.elementor-widget-theme-post-featured-image a {
+  width: 100%;
+}
+
+.highlightedPostSec section.elementor-section.postDate {
+  right: 1.875rem;
+}
+
+section.elementor-section.postSec.allPostSec {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+section.elementor-section.postSec.allPostSec nav.elementor-pagination {
+  margin-top: 3.75rem;
+  border: 0.063rem solid #b1aca040;
+  width: fit-content;
+  margin: 3.75rem auto 0;
+  display: flex;
+}
+
+section.elementor-section.postSec.allPostSec .elementor-element.elementor-widget-loop-grid {
+  margin-bottom: 0 !important;
+}
+
+section.elementor-section.postSec.allPostSec nav.elementor-pagination .page-numbers {
+  height: 3.125rem;
+  width: 3.125rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #111212;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.elementor-section.postSec.allPostSec nav.elementor-pagination .page-numbers.current,
+section.elementor-section.postSec.allPostSec nav.elementor-pagination .page-numbers:hover {
+  background-color: #327585;
+  color: #fff;
+}
+
+section.elementor-section.postSec.allPostSec nav.elementor-pagination .page-numbers:not(.current, :last-child) {
+  border-right: 0.063rem solid #b1aca040;
+}
+
+.highlightedPostSec .elementor-element.elementor-widget-theme-post-title .elementor-heading-title {
+  width: 100%;
+  /*   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+/*  News and Media  */
+
+/* Data Reqeust Form */
+
+.contact-us-form-wrapper input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  flex-grow: 0;
+  border-radius: 0.313rem !important;
+  background-color: transparent;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+  padding: unset !important;
+}
+
+/* Pseudo element for check styling */
+.contact-us-form-wrapper input[type="checkbox"]::before {
+  content: "";
+  color: transparent;
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 0;
+  background-color: transparent;
+  background-size: contain;
+  box-shadow: none;
+}
+
+/* Checked */
+.contact-us-form-wrapper input[type="checkbox"]:checked {
+  background-color: currentcolor;
+}
+
+.contact-us-form-wrapper input[type="checkbox"]:checked::before {
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+  background-position: -0.063rem -0.063rem;
+}
+
+.contact-us-form-wrapper input[type="radio"] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 0.063rem solid #327585 !important;
+  border-radius: 100% !important;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 0;
+  background-color: transparent;
+}
+
+.contact-us-form-wrapper input[type="radio"]:checked {
+  border-color: #327585;
+  background-color: transparent;
+}
+
+.contact-us-form-wrapper input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 0.625rem;
+  height: 0.625rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+section.elementor-section.data-request-wrapper input.wpcf7-form-control {
+  background-color: transparent;
+}
+
+section.elementor-section.data-request-wrapper .radio-btn-wrapper:not(.inline-radio-wrapper) {
+  margin-bottom: 1.625rem;
+}
+
+section.elementor-section.data-request-wrapper .radio-btn-wrapper:not(.inline-radio-wrapper) .wpcf7-form-control.wpcf7-radio.contact-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+section.elementor-section.data-request-wrapper .data-rights-wrapper p:not(:has(strong), li p) {
+  margin-bottom: 1.25rem !important;
+  color: #000;
+}
+
+.radio-label p {
+  color: #000;
+}
+
+section.elementor-section.data-request-wrapper .data-rights-wrapper p strong {
+  color: #000;
+  font-weight: 500;
+}
+
+section.elementor-section.data-request-wrapper .data-rights-wrapper li,
+section.elementor-section.data-request-wrapper .data-rights-wrapper li p {
+  color: #000 !important;
+}
+
+section.elementor-section.data-request-wrapper .data-rights-wrapper ul {
+  margin-bottom: 1.5rem !important;
+  margin-top: 1rem;
+}
+
+/* Data Reqeust Form */
+
+.contact-cv-wrapper input.contact-file-upload {
+  width: 100%;
+}
+
+.margin-below-p p {
+  margin-bottom: 2rem !important;
+}
+
+.margin-below-ul ul {
+  margin-bottom: 2rem;
+}
+
+/* Toyota inner pages  */
+
+.featuredProducts .productsFilterSec .col-1 h3 {
+  background: #111212;
+}
+
+.featuredProducts .productsGridGlobalStyled .elementor-widget-button a {
+  background: #111212;
+}
+
+.featuredProducts .productsGridGlobalStyled .elementor-widget-button a:hover {
+  background: var(--toyota) !important;
+}
+
+.featuredProducts .filterCard:before {
+  background: rgb(30 54 108 / 40%);
+}
+
+.featuredProducts .productsGridGlobalStyled h3 a {
+  color: #111212 !important;
+}
+
+.featuredProducts .productsGridGlobalStyled .card:hover h3 a {
+  color: #111212 !important;
+}
+
+.featuredProducts .productsGridGlobalStyled h3 a:before {
+  background: #111212 !important;
+}
+
+.productsGrid.productsGrid-2 .elementor-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.elementor-section.productsGrid-toyota-wrapper {
+  background-color: var(--toyota) !important;
+}
+
+.productsGrid-2 .elementor-container .box .elementor-image-box-content {
+  background: #000;
+  bottom: 0;
+}
+
+.productsGrid-2 .elementor-container .box .elementor-image-box-content p {
+  transform: translateY(160%);
+}
+
+.productsGrid-2 .elementor-container .box:hover .elementor-image-box-content {
+  background: #b22823;
+}
+
+section.elementor-section.content-image-grid-wrapper .wpr-grid-media-wrap img {
+  height: 24.375rem;
+  object-fit: cover;
+}
+
+.toyotaSubCatProductsGrid .subcategory-grid a.subcategory-card {
+  background: #f2edee;
+}
+
+/* Toyota inner pages  */
+
+/* Filter Sidebar Start */
+
+.category-sidebar-wrapper .category-sidebar-listing .subcategory-grid .subcategory-image {
+  display: none;
+}
+
+.category-sidebar-wrapper .category-sidebar-listing .subcategory-grid .subcategory-title {
+  background-color: transparent;
+  color: #000 !important;
+  font-size: 1rem !important;
+  text-transform: capitalize;
+  padding: 0 !important;
+  padding-left: 0.625rem !important;
+}
+
+.filtersSec h4 {
+  color: white !important;
+  text-transform: uppercase;
+  padding: 0.625rem !important;
+  font-size: 1.375rem !important;
+  background: var(--toyota);
+}
+
+.category-sidebar-listing .subcategory-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+.filtersSec .wpgb-range-facet {
+  margin-top: 1rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.filtersSec .wpgb-range-facet .wpgb-range-progress {
+  background: #e66445 !important;
+}
+
+.filtersSec {
+  display: none;
+}
+
+.material-handling-warehousing-and-industrial-products .filtersSec {
+  display: block;
+}
+
+.filtersSec .wpgb-range-facet .wpgb-range-slider {
+  height: 0.125rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.filtersSec .wpgb-range-facet .wpgb-range-slider .wpgb-range-thumb {
+  background: #e66445 !important;
+  border: none !important;
+  height: 0.875rem !important;
+  width: 0.875rem !important;
+}
+
+.filtersSec .wpgb-range-facet span.wpgb-range-values {
+  font-size: 1rem;
+  color: #111212 !important;
+  font-weight: 500;
+  padding: 0 !important;
+  line-height: 1.875rem;
+  font-variant-numeric: normal;
+}
+
+.filtersSec .wpgb-checkbox-facet {
+  margin-top: 1rem;
+  padding: 0 0.625rem;
+}
+
+.filtersSec .wpgb-checkbox-facet .wpgb-checkbox {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.filtersSec .wpgb-checkbox-facet ul.wpgb-hierarchical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filtersSec .wpgb-checkbox-facet .wpgb-checkbox span.wpgb-checkbox-label {
+  padding: 0;
+  font-size: 1rem;
+  color: #111212 !important;
+  font-weight: 500;
+  padding: 0 !important;
+  line-height: 1.875rem;
+}
+
+.filtersSec .wpgb-checkbox-facet .wpgb-checkbox span.wpgb-checkbox-control {
+  width: 1rem;
+  height: 1rem;
+  border: 0.063rem solid var(--toyota) !important;
+  border-radius: 0.125rem;
+}
+
+.filtersSec .wpgb-facet .wpgb-checkbox-facet .wpgb-checkbox[aria-pressed="true"] .wpgb-checkbox-control {
+  background: var(--toyota);
+  border-color: var(--toyota);
+}
+
+.filtersSec.elementor-element-edit-mode {
+  display: block;
+}
+
+.filtersSec .resetBtn .wpgb-facet {
+  justify-content: flex-end;
+  display: flex;
+  margin-top: 1.25rem;
+}
+
+.filtersSec .resetBtn .wpgb-facet button {
+  padding: 0.5rem 1rem !important;
+  border-radius: 0;
+  transition: all 0.4s ease-out;
+  background: #111212;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white !important;
+}
+
+.filtersSec .resetBtn .wpgb-facet button:hover {
+  background: var(--toyota);
+}
+
+.totalResults .wpgb-facet {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.totalResults .wpgb-facet span.wpgb-result-count {
+  color: var(--char) !important;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.elementor-widget-loop-grid.wpgb-loading {
+  opacity: 0.5;
+}
+
+.elementor-widget-loop-grid {
+  transition: all 0.4s ease-out;
+}
+
+.header .wpr-mega-menu .wpml-ls-item {
+  display: none !important;
+}
+
+.sortBySec {
+  margin-bottom: 2rem;
+}
+
+.sortByKomatsuCol {
+  display: none !important;
+  width: 25rem !important;
+}
+
+.totalCol {
+  width: 100% !important;
+}
+
+.komatsu .sortByKomatsuCol {
+  display: block !important;
+}
+
+.mainMegaMenu.productMegaWrapper p strong {
+  min-height: 3rem;
+}
+
+.sortByKomatsuCol .wpgb-facet select.wpgb-select {
+  padding: 0;
+  padding-bottom: 1rem;
+  height: auto !important;
+  border: none;
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--char) !important;
+}
+
+.sortByKomatsuCol .wpgb-facet .wpgb-facet-title {
+  color: var(--char) !important;
+  font-size: 1.25rem !important;
+  margin: 0 !important;
+  font-weight: 500 !important;
+}
+
+.sortByKomatsuCol .wpgb-sort-facet:before {
+  content: "";
+  background: var(--char);
+  height: 0.063rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.sortByKomatsuCol .wpgb-facet select.wpgb-select+.wpgb-select-controls .wpgb-select-separator {
+  display: none;
+}
+
+.sortByKomatsuCol .wpgb-facet select.wpgb-select+.wpgb-select-controls svg {
+  margin: 0;
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-top: -0.4rem;
+}
+
+.sortByKomatsuCol .wpgb-select {
+  border: none;
+  padding-bottom: 0.625rem;
+}
+
+.sortByKomatsuCol .wpgb-select .wpgb-select-placeholder {
+  padding: 0;
+}
+
+.sortByKomatsuCol button.wpgb-select-toggle {
+  padding: 0;
+}
+
+.sortByKomatsuCol span.wpgb-select-separator {
+  display: none;
+}
+
+.sortByKomatsuCol .wpgb-select-toggle {
+  height: 1.625rem;
+  width: 1.625rem;
+  color: #000000;
+}
+
+.sortByKomatsuCol .wpgb-select-placeholder input[type="text"] {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--char) !important;
+}
+
+.sortByKomatsuCol .wpgb-facet select.wpgb-select option {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--char) !important;
+}
+
+.quoteWrapp p,
+.quoteWrapp p a {
+  color: white;
+}
+
+.quoteForm .wpcf7-file {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.quoteForm select {
+  padding-top: 1rem;
+  padding-bottom: 1.84rem;
+}
+
+.contact-us-form-wrapper .form .submit input.wpcf7-submit:hover {
+  background: var(--primary) !important;
+  color: white;
+}
+
+.quoteForm span.select2 {
+  width: 100% !important;
+  margin-top: 1rem !important;
+}
+
+.quoteForm span.select2 span.select2-selection.select2-selection--multiple {
+  border: none;
+}
+
+.quoteForm span.select2 span.select2-selection.select2-selection--multiple ul li {
+  width: 100% !important;
+}
+
+.quoteForm span.select2 span.select2-selection.select2-selection--multiple ul li input {
+  /*   width: 100% !important; */
+  padding-bottom: 1.3rem;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  margin-right: 0.3rem !important;
+}
+
+.select2-container.select2-container--open .select2-dropdown--below {
+  border-top: var(--wc-form-border-width, 1px) solid var(--wc-form-border-color, #aaa);
+  border-top-left-radius: var(--wc-form-border-radius, 4px);
+  border-top-right-radius: var(--wc-form-border-radius, 4px);
+}
+
+.rtl .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  margin-right: 0 !important;
+  margin-left: 0.3rem !important;
+}
+
+.elementor-widget-text-editor p a {
+  text-decoration: underline;
+}
+
+.single-post #breadcrumbs>span>img:nth-child(2), .single-post #breadcrumbs>span>span:nth-child(3) {
+  display: none;
+}
+
+.quoteForm span.select2 span.select2-selection.select2-selection--multiple ul {
+  padding: 0;
+}
+
+.form.quoteForm textarea {
+  padding: 0.5rem 0;
+}
+
+.contactSec .form .row p {
+  gap: 1.25rem;
+}
+
+.material-handling-warehousing-and-industrial-products .category-sidebar-listing .subcategory-grid {
+  margin-bottom: 1.25rem;
+}
+
+.search .productsGridGlobalStyled .elementor-widget-button a {
+  background: var(--primary);
+}
+
+/* Filter Sidebar End */
+
+/* Abdullah CSS End */
+
+#elementor-popup-modal-4969 .dialog-widget-content, #elementor-popup-modal-5474 .dialog-widget-content {
+  position: fixed !important;
+  top: 10.7rem !important;
+  left: 0 !important;
+  transform: none;
+  width: 24rem !important;
+  box-shadow: none !important;
+}
+
+#elementor-popup-modal-4969 {
+  background: transparent !important;
+}
+
+.searchPopup form {
+  /*     height: 8rem; */
+}
+
+.searchPopup form input {
+  background: #d4d4d4;
+}
+
+.searchPopup button.e-search-submit {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  margin: 0 !important;
+  padding: 0rem !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.searchPopup button.e-search-submit svg {
+  margin: 0 !important;
+}
+
+#elementor-popup-modal-4969 .dialog-close-button {
+  top: 50% !important;
+  right: 5rem !important;
+  transform: translateY(-50%);
+}
+
+body #elementor-popup-modal-4969 .dialog-close-button svg {
+  fill: black !important;
+  display: none;
+}
+
+#elementor-popup-modal-5474 .dialog-message {
+  width: 100% !important;
+}
+
+#elementor-popup-modal-5474 {
+  background: transparent !important;
+}
+
+#elementor-popup-modal-5474 .dialog-close-button {
+  top: 50% !important;
+  left: 5rem !important;
+  transform: translateY(-50%);
+}
+
+body #elementor-popup-modal-5474 .dialog-close-button svg {
+  fill: black !important;
+  display: none;
+}
+
+.rtl .searchPopup button.e-search-submit {
+  right: auto;
+  left: 1rem;
+}
+
+.elementor-widget-search .e-search-input.no-icon-label {
+  border: none;
+  font-size: 1.25rem;
+  color: var(--char) !important;
+  font-weight: 500;
+}
+
+.search .brandsSec,
+.search .relatedCat,
+.search .productsFilterSec .col-1 {
+  display: none;
+}
+
+.search .productsFilterSec .col-2 {
+  width: 100% !important;
+}
+
+.search .elementor-grid-3 .elementor-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.search .productsFilterSec nav.elementor-pagination .page-numbers.current {
+  background: var(--primary);
+}
+
+.search .productsFilterSec nav.elementor-pagination .page-numbers:hover {
+  background: var(--primary);
+}
+
+body .footer-middle .elementor-widget:not(:last-child).m-bottom {
+  margin-bottom: 0.8rem !important;
+}
+
+ul.products.elementor-grid.columns-3::before {
+  display: none;
+}
+
+.products li.product-category.product {
+  width: 100% !important;
+}
+
+/* .rental-solutions-and-commercial-vehicles .header .col-3 {
+    width: 18rem !important;
+} */
+
+.rental-solutions-and-commercial-vehicles .wpr-sub-mega-menu {
+  left: -21rem !important;
+  transform: translateY(2rem) !important;
+}
+
+.rental-solutions-and-commercial-vehicles .megaMenuSubCat .subcategory-grid a.subcategory-card:hover {
+  background: var(--rental);
+}
+
+.rental-solutions-and-commercial-vehicles .megaMenuSubCat .subcategory-grid a.subcategory-card:hover h3 {
+  color: white !important;
+}
+
+.rental-solutions-and-commercial-vehicles .innerCol2 {
+  width: 65% !important;
+}
+
+.rental-solutions-and-commercial-vehicles .header .wpr-sub-mega-menu {
+  width: 70rem;
+}
+
+.rental-solutions-and-commercial-vehicles .header .innerCol1 img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(311deg) brightness(101%) contrast(102%);
+}
+
+
+.rental-solutions-and-commercial-vehicles .header.headerCat .innerCol1 img {
+  width: 18rem !important;
+}
+
+.elementor-element-edit-mode.adds-box {
+  display: block;
+}
+
+.related.hidden {
+  display: none;
+}
+
+.custom-product-tabs ul.tabs-nav li.description, .custom-product-tabs #tab-description {
+  display: none;
+}
+
+/* Home Page Locations  */
+.labelsMaps {
+  width: fit-content !important;
+  padding: 0.75rem 1.5rem;
+  background: #7D9FB033;
+  border: 2px solid #7F8589;
+  box-shadow: 0px 1px 3px 0px #0000001A;
+}
+
+.homeLocations {
+  background: #121212;
+}
+
+.homeLocations #wpsl-base-gmap_0 {
+  height: 28.125rem;
+  margin-top: 1.75rem;
+}
+
+.labelsMaps.margin-left {
+  margin-left: 5rem;
+}
+
+.labelsMaps.margin-right {
+  margin-right: 5rem;
+}
+
+
+.labelsMaps .col-1 {
+  width: fit-content !important;
+}
+
+.labelsMaps .col-2 {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.labelsMaps>.elementor-container {
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.labelsMaps p {
+  color: white;
+}
+
+.homeLocations .elementor-widget-wrap.elementor-element-populated {
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* .labelsMaps .col-2.blue {
+    background: #3b7eae;
+}
+
+.labelsMaps .col-2.red {
+    background: #c91e1f;
+}
+
+.labelsMaps .col-2.orange {
+    background: #f35a19;
+} */
+
+/* New Sections CSS Values and Map  */
+.wpsl-search {
+  background: var(--primary);
+  padding: 1.25rem;
+}
+
+#wpsl-search-wrap form {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-end;
+  /* justify-content: space-between; */
+}
+
+#wpsl-search-wrap div, #wpsl-search-btn {
+  margin: 0;
+}
+
+#wpsl-search-wrap .wpsl-select-wrap {
+  display: flex !important;
+  gap: 1.25rem;
+  width: fit-content !important;
+}
+
+.wpsl-input {
+  display: flex !important;
+  flex-direction: column;
+  width: 23.5rem;
+}
+
+#wpsl-search-wrap .wpsl-select-wrap div#wpsl-radius, #wpsl-search-wrap .wpsl-select-wrap div#wpsl-results {
+  display: flex;
+  flex-direction: column;
+  width: 12.5rem;
+}
+
+#wpsl-search-wrap label {
+  font-size: 1rem !important;
+  color: white !important;
+  margin: 0 !important;
+}
+
+#wpsl-category {
+  display: flex;
+  flex-direction: column;
+}
+
+#wpsl-search-input {
+  width: 100% !important;
+  border-radius: 0 !important;
+  height: 3rem;
+}
+
+.wpsl-dropdown {
+  width: 100% !important;
+  height: 3rem;
+  border-radius: 0;
+}
+
+div#wpsl-category {
+  width: 24.5rem !important;
+}
+
+input#wpsl-search-btn {
+  width: fit-content !important;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  font-size: 1.25rem;
+  display: block;
+  color: white;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid white;
+  padding-right: calc(1.5rem + 2.25rem);
+}
+
+.wpsl-search-btn-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.799rem;
+  height: 100%;
+  background-image: url(/wp-content/uploads/2026/04/map-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.wpsl-search-btn-wrap {
+  position: relative;
+}
+
+span.wpsl-selected-item {
+  font-size: 1.25rem;
+  color: #616163 !important;
+}
+
+.wpsl-selected-item:after {
+  display: none;
+}
+
+.wpsl-selected-item:before {
+  content: '';
+  position: absolute;
+  top: 60%;
+  right: 12px;
+  background-image: url(/wp-content/uploads/2026/04/chev-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.125rem;
+  height: 1.125rem;
+  transform: translateY(-50%);
+}
+
+.wpsl-dropdown ul li {
+  font-size: 1.25rem;
+  color: #616163;
+}
+
+.wpsl-dropdown ul li {
+  font-size: 1.25rem;
+  color: #616163;
+}
+
+#wpsl-wrap #wpsl-result-list ul li {
+  background: #F2F5F8;
+  padding: 1rem;
+  margin-right: 1rem !important;
+  margin-bottom: 1rem !important;
+  border: none;
+}
+
+.wpsl-search {
+  margin-bottom: 1.25rem !important;
+}
+
+.wpsl-direction-wrap {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.094rem !important;
+}
+
+.wpsl-store-location p {
+  font-size: 1.094rem !important;
+/*   color: white !important; */
+}
+
+.wpsl-store-location p strong {
+  font-weight: 700;
+/*   color: white !important; */
+}
+
+.material-handling-warehousing-and-industrial-products .bg-sec.changeBg {
+    background: #f2edee !important;
+}
+
+.inner-page-sec .elementor-widget-text-editor li {
+    color: white;
+}
+
+/* Arabic Start  */
+
+.rtl .global-btn span.elementor-button-content-wrapper {
+  flex-direction: row !important;
+}
+
+.rtl .global-btn span.elementor-button-content-wrapper span.elementor-button-icon {
+  right: auto;
+  left: 0;
+}
+
+.rtl .global-btn a {
+  padding-right: 1.5rem;
+  padding-left: calc(1.5rem + 2.791rem);
+}
+
+/* .rtl .global-btn svg {
+    transform: scaleX(-1);
+} */
+
+.rtl .header>.elementor-container {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.rtl .totalResults .wpgb-facet span.wpgb-result-count {
+  font-weight: 600;
+}
+
+.rtl .topBar .elementor-widget.elementor-align-right .elementor-icon-list-items {
+  justify-content: flex-end;
+}
+
+.rtl .contactBtn {
+  text-align: left;
+}
+
+.rtl .topBar .col-1 ul li:first-child a:before {
+  display: block;
+}
+
+.rtl .topBar .col-1 ul li:last-child a:before {
+  display: none;
+}
+
+.rtl .topBar .col-1 ul li a i.wpr-sub-icon.fas {
+  right: auto;
+  left: -1.2rem;
+}
+
+.rtl .header .col-1 {
+  width: 14rem !important;
+}
+
+.rtl .aboutMega .wpr-sub-mega-menu {
+  left: auto !important;
+  right: -20.5rem !important;
+}
+
+.rtl .productsMega .wpr-sub-mega-menu {
+  left: auto !important;
+  right: -26.3rem !important;
+}
+
+.rtl .supportMega .wpr-sub-mega-menu {
+  left: auto !important;
+  right: -32rem !important;
+}
+
+.rtl .techMega .wpr-sub-mega-menu {
+  left: auto !important;
+  right: -43.3rem !important;
+}
+
+.rtl .mainMegaMenu p strong {
+  font-weight: 600;
+}
+
+.rtl .mainMegaMenu .variant-btn {
+  text-align: right;
+}
+
+.rtl .aboutMegaWrapper.mainMegaMenu>.elementor-container>.elementor-column:before {
+  right: auto;
+  left: -1.5rem;
+}
+
+.rtl .productsGrid .elementor-container .box:hover .elementor-image-box-content h4 a:after {
+  transform: translateY(-50%) scaleX(-1) rotate(45deg) !important;
+}
+
+.rtl .subCatSec .elementor-grid li a:hover h2:before {
+  transform: translateY(-50%) rotate(-135deg) !important;
+}
+
+.rtl .variant-btn a:hover svg {
+  transform: rotate(-225deg) !important;
+}
+
+.rtl .heroSec .swiper-slide-inner {
+  justify-content: right !important;
+  padding-right: 5rem !important;
+}
+
+.rtl .heroSec .swiper-pagination {
+  left: auto !important;
+  right: 5rem !important;
+}
+
+.rtl .heroSec .slide-progress-wrap {
+  left: auto;
+  right: 14.7rem !important;
+}
+
+.rtl .heroSec .swiper-slide-bg {
+  transform: scaleX(-1);
+}
+
+.rtl .industrySecTop .variant-btn {
+  text-align: right;
+}
+
+.rtl .productsGrid .elementor-container .box .elementor-image-box-content h4 a:after {
+  right: auto;
+  left: 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.rtl .productsGrid .elementor-container .box .elementor-image-box-content p {
+  padding-right: 0;
+  padding-left: 2rem;
+  min-height: 6rem;
+}
+
+.rtl .productsGrid .elementor-container .box:hover .elementor-image-box-content p {
+  transform: translateY(20%);
+}
+
+.rtl .contactSec .form .submit {
+  margin-left: auto;
+}
+
+.rtl input,
+.rtl textarea {
+  direction: rtl !important;
+}
+
+.rtl .footer-bottom ul li a:before {
+  left: auto;
+  right: -0.875rem;
+}
+
+.rtl .headerCat.header .col-2 ul {
+  justify-content: flex-end;
+}
+
+.rtl .contact-us-form-wrapper input[type="checkbox"]:checked::before {
+  background-position: 0.063rem -0.063rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.rtl .header.headerCat .col-2 section>.elementor-container {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.rental-solutions-and-commercial-vehicles.rtl .form .submit p input {
+  border-right-color: var(--char) !important;
+}
+
+.rtl .innerPageHero .elementor-widget-image:before {
+  transform: scalex(-1);
+}
+
+.rtl .custom-product-tabs ul.tabs-nav li {
+  font-family: "Luma" !important;
+}
+
+.rtl .brandsSec .product-category-cards .category-logo:after,
+.rtl .subCatSec .elementor-grid h2:before,
+.rtl .relatedCat .category-card-content:after {
+  right: auto;
+  left: 2rem;
+  transform: translateY(-50%) rotate(-90deg) !important;
+}
+
+.rtl .wpr-sub-menu-item span.wpml-ls-native {
+  font-family: "Karbon" !important;
+}
+
+.rtl .subCatSec .elementor-grid li a:hover h2:before,
+.rtl .relatedCat a:hover .category-card-content:after {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.rtl .relatedCat .category-card-content p {
+  padding-right: 0;
+  padding-left: 2rem;
+}
+
+.rtl .category-sidebar-wrapper .category-sidebar-listing .subcategory-grid a.subcategory-card.active:hover svg {
+  transform: rotate(135deg);
+}
+
+.rtl.rental-solutions-and-commercial-vehicles.material-handling .productsGridGlobalStyled .product-specs-related .spec-item p.spec-value {
+  font-family: 'Luma' !important;
+}
+
+.rtl .productsGridGlobalStyled .product-specs-related .spec-item p.spec-title {
+  white-space: nowrap;
+}
+
+.rtl .productContent {
+  min-height: 16.3rem;
+}
+
+.rental-solutions-and-commercial-vehicles.rtl .form .submit p input {
+  border-right: 0.125rem solid !important;
+}
+
+.rental-solutions-and-commercial-vehicles.rtl .form .submit:hover p input {
+  border-right: 0.125rem solid var(--rental) !important;
+}
+
+.rtl .category-sidebar-wrapper .category-sidebar-listing .subcategory-grid a.subcategory-card.active svg {
+  transform: rotate(190deg);
+}
+
+.rtl .category-sidebar-wrapper .category-sidebar-listing .subcategory-grid .subcategory-title {
+  padding-left: 0 !important;
+  padding-right: 0.625rem !important;
+}
+
+.rtl .filterCard .global-btn a svg {
+  transform: rotate(-90deg);
+}
+
+.rtl .filterCard .global-btn a:hover svg {
+  transform: rotate(-135deg) !important;
+}
+
+.rtl .productsGridGlobalStyled .elementor-widget-button a>span svg {
+  transform: rotate(180deg);
+}
+
+.rtl .productsGridGlobalStyled h3 a {
+  font-family: "Karbon" !important;
+}
+
+.rtl.single-product .innerPageHero .pageTitle h1,
+.rtl .productSpecs .col-2 h2 {
+  font-family: "Karbon" !important;
+}
+
+/* .rtl.rental-solutions-and-commercial-vehicles .headerCat.header .col-2 ul {
+  justify-content: flex-start;
+} */
+
+.rtl .radio-btn-wrapper span.wpcf7-form-control span.wpcf7-list-item label span.wpcf7-list-item-label {
+  padding-left: 0;
+  padding-right: 0.75rem;
+}
+
+.rtl .productsGrid .elementor-container .box .elementor-image-box-content h4 a {
+  font-weight: 600;
+}
+
+.rtl h3 {
+  font-weight: 600 !important;
+}
+
+.rtl h4 {
+  font-weight: 600 !important;
+}
+
+.rtl .footer-middle p {
+  font-weight: 600 !important;
+}
+
+.elementor-widget-text-editor a {
+  color: inherit !important;
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled .elementor-swiper-button-prev.swiper-button-disabled {
+  background: #111212;
+}
+
+.rental-solutions-and-commercial-vehicles .productsGridGlobalStyled .elementor-swiper-button-prev {
+  background: var(--rental);
+}
+
+.elementor-widget-text-editor {
+  font-family: "Karbon" !important;
+}
+
+.home .industrySecTop .col-2 {
+  width: 55rem !important;
+}
+
+.category-sidebar-wrapper .category-sidebar-listing .subcategory-grid a.subcategory-card.active {
+  display: flex;
+  align-items: center;
+}
+
+.category-sidebar-wrapper .category-sidebar-listing .subcategory-grid a.subcategory-card.active svg {
+  height: 0.625rem;
+  width: 0.625rem;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-90deg);
+}
+
+.category-sidebar-wrapper .category-sidebar-listing .subcategory-grid a.subcategory-card.active:hover svg {
+  transform: rotate(-45deg);
+}
+
+.komatsu .category-sidebar-listing a.subcategory-card svg path {
+  fill: var(--komatsu);
+  stroke: var(--komatsu);
+}
+
+.powerscreen .category-sidebar-listing a.subcategory-card svg path {
+  fill: var(--powerscreen);
+  stroke: var(--powerscreen);
+}
+
+.teksan .category-sidebar-listing a.subcategory-card svg path {
+  fill: var(--teksan);
+  stroke: var(--teksan);
+}
+
+.mds .category-sidebar-listing a.subcategory-card svg path {
+  fill: var(--mds);
+  stroke: var(--mds);
+}
+
+.terex .category-sidebar-listing a.subcategory-card svg path {
+  fill: var(--terex);
+  stroke: var(--terex);
+}
+
+.material-handling-warehousing-and-industrial-products .category-sidebar-listing a.subcategory-card svg path {
+  fill: var(--toyota);
+  stroke: var(--toyota);
+}
+
+.rental-solutions-and-commercial-vehicles .category-sidebar-listing a.subcategory-card svg path {
+  fill: var(--rental);
+  stroke: var(--rental);
+}
+
+.man .category-sidebar-listing a.subcategory-card svg path {
+  fill: var(--man);
+  stroke: var(--man);
+}
+
+.subcategory-grid a.subcategory-card svg:not(.category-sidebar-listing *) {
+  display: none;
+}
+
+.toyota-filters:not(.material-handling-warehousing-and-industrial-products *) {
+  display: none;
+}
+
+.contact-us-form-wrapper .row.contact-pageInfoRow {
+  display: none;
+}
+
+.sitemap-wrapper ul li a {
+  color: #327585;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.sitemap-wrapper ul li {
+  list-style: disc;
+  color: #327585;
+}
+
+.sitemap-wrapper ul li a:hover {
+  color: #000;
+}
+
+/* Single Post Wrapper */
+
+section.elementor-section.single-post-meta-wrapper>.elementor-container {
+  flex-direction: column !important;
+  /*   padding-right: 2.5rem; */
+}
+
+section.elementor-section.single-post-meta-wrapper>.elementor-container .elementor-column.single-post-f-image-wrapper {
+  width: 100%;
+}
+
+section.elementor-section.single-post-meta-wrapper>.elementor-container .elementor-column.single-post-f-image-wrapper img {
+  width: 100%;
+  max-height: 28.125rem;
+  object-fit: cover;
+}
+
+section.elementor-section.single-post-meta-wrapper .postDate.single-post-date-wrapper {
+  position: absolute !important;
+  bottom: unset;
+  right: unset;
+  width: fit-content !important;
+  top: 24rem;
+}
+
+section.elementor-section.single-post-meta-wrapper .single-post-title-loc-wrapper {
+  margin-top: 4.438rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+section.elementor-section.single-post-meta-wrapper .single-post-title-loc-wrapper .single-post-title-wrapper {
+  margin-top: 1.5rem;
+}
+
+section.elementor-section.single-post-meta-wrapper .single-post-title-loc-wrapper .single-post-location-wrapper .elementor-heading-title {
+  font-size: 1.25rem !important;
+}
+
+/* Single Post Wrapper */
+
+/* arabic font */
+body.rtl,
+body.rtl h1,
+body.rtl h2,
+body.rtl h3,
+body.rtl h4,
+body.rtl h5,
+body.rtl h6,
+body.rtl a,
+body.rtl li,
+body.rtl p,
+body.rtl span {
+  direction: rtl;
+  text-align: right;
+  font-family: "Luma" !important;
+}
+
+.home-banner .swiper-slide-contents .elementor-slide-heading {
+  min-height: 8rem;
+  display: flex;
+  align-items: end;
+}
+
+.heroSec:before,
+.heroSec:after {
+  display: none;
+}
+
+.industrySecTop .col-2 {
+  width: 55rem !important;
+}
+
+.card-color-gray {
+  background: #4d4e4d !important;
+}
+
+.contact-us-form-wrapper .form .row .col {
+  margin-bottom: 2rem;
+}
+
+.contact-us-form-wrapper .form .row .col.select-box label {
+  margin-bottom: 1rem;
+}
+
+/* .locations-map-wrapper .wpsl-gmap-canvas {
+  height: 50rem !important;
+} */
+
+.wpsl-info-window p strong {
+  /*     display: none; */
+}
+
+.bg-sec.relatedCat {
+  background: #4d4e4d !important;
+}
+
+.bg-sec.relatedCat a:hover .category-card-content {
+  background: var(--primary) !important;
+}
+
+.bg-sec.relatedCat .category-card-content {
+  background: #232323 !important;
+}
+
+body.rtl .custom-product-tabs .tabs-content .tab .spec-value {
+  direction: ltr;
+  text-align: left;
+  font-family: "Karbon" !important;
+}
+
+.inner-page-sec.value-content-wrapper .elementor-container .elementor-column:first-child {
+  padding-right: 0;
+}
+
+.inner-page-sec.value-content-wrapper-even .inner-content {
+  background: #7ea8c1 !important;
+}
+
+.inner-page-sec.elementor-section-height-default .elementor-container .elementor-column.inner-content {
+  padding: 2.5rem 5rem;
+  background: #b9b3a9;
+}
+
+.inner-page-sec.elementor-section-height-default .elementor-container .elementor-column.inner-content h2 {
+  color: var(--white) !important;
+}
+
+.inner-page-sec .elementor-widget-text-editor {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.inner-page-sec .elementor-widget-text-editor p {
+  color: var(--white);
+}
+
+.inner-content-img .elementor-widget-image {
+  height: 100%;
+}
+
+.inner-content-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  min-height: 26rem;
+}
+
+.sec-padded-t80 {
+  padding-top: 5rem;
+}
+
+.sec-padded-b80 {
+  padding-bottom: 5rem;
+}
+
+.sec-padded-tb80 {
+  padding-block: 5rem;
+}
+
+.sec-padded-lr80 {
+  padding-inline: 5rem;
+}
+
+.inner-page-hd-Info .elementor-widget-text-editor p {
+  font-weight: 500 !important;
+}
+
+.wpcf7:not(.submitted) .wpcf7-not-valid-tip {
+  display: none;
+}
+
+.invalid .wpcf7-not-valid-tip {
+  display: block !important;
+}
+
+.toyota-static-page-products-menu-wrapper:not(body.page.material-handling-warehousing-and-industrial-products *) {
+  display: none;
+}
+
+.single-post-title-loc-wrapper.single-post-content-box {
+  margin-top: 0 !important;
+}
+
+/* .rtl .searchHeader img {
+  margin-right: 0;
+  margin-left: 1rem;
+} */
+
+.rtl .header .col-1>.elementor-widget-wrap {
+  justify-content: flex-end;
+}
+
+.rtl .searchHeader a {
+  justify-content: flex-start;
+}
+
+.rtl .valuesContent {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.rtl .innerPageHero .pageTitle h1 {
+  font-weight: 600 !important;
+}
+
+.rtl .header .col-2 ul li a {
+  font-weight: 600;
+}
+
+.rtl .contactBtn a {
+  font-weight: 600 !important;
+}
+
+.rtl .variant-btn a>span svg {
+  transform: rotate(-180deg) !important;
+}
+
+.rtl .form .arrow {
+  right: auto;
+  left: 0;
+}
+
+.rtl .form .submit p input {
+  padding-right: 1.5rem !important;
+  padding-left: calc(1.5rem + 2.75rem);
+  /*     border-right: 0.125rem solid white !important; */
+}
+
+.rtl .form .arrow img {
+  transform: rotate(-90deg);
+}
+
+.rtl .form .submit:hover .arrow img {
+  transform: rotate(-135deg);
+}
+
+.rtl .heroSec a:after {
+  right: auto;
+  left: 0;
+}
+
+.rtl .heroSec a:before {
+  right: auto;
+  left: 1rem;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.rtl .heroSec a {
+  border-right: 0.125rem solid var(--primary) !important;
+  padding-right: 1.5rem;
+  padding-left: calc(1.5rem + 2.75rem);
+}
+
+.rtl .heroSec a:hover:before {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.rtl h1 {
+  font-weight: 600 !important;
+}
+
+.rtl .swiper-slide-contents {
+  max-width: 65rem !important;
+}
+
+.rtl .productsGridGlobalStyled .product-specs-related .spec-item p.spec-value {
+  font-family: 'Karbon' !important;
+  text-align: left !important;
+  direction: ltr;
+}
+
+.rtl .productSpecs ul.flex-direction-nav li a.flex-prev:before {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.rtl .productSpecs ul.flex-direction-nav li a:before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.rtl .btnsProducts>.elementor-container {
+  flex-direction: row-reverse;
+}
+
+.rtl .innerPageHero .breadcrumb p#breadcrumbs>span img[alt="Chevron Breadcrumb"] {
+  transform: rotate(180deg);
+  margin-top: 0.3rem;
+}
+
+.rtl .value-content-wrapper ul {
+  padding-left: 0;
+  padding-right: 1.3rem;
+}
+
+.rtl .locations-grid-wrapper .elementor-column .elementor-widget-wrap .elementor-element.elementor-widget-heading h2 {
+  font-family: 'Luma' !important;
+  font-weight: 600 !important;
+}
+
+.rtl .locations-grid-wrapper .elementor-container ul li:nth-child(2) a span.elementor-icon-list-text, .rtl .locations-grid-wrapper .elementor-container ul li:nth-child(3) a span.elementor-icon-list-text {
+  direction: ltr;
+  padding-left: 0;
+  padding-right: 0.3rem;
+  font-family: 'Karbon' !important;
+}
+
+body.rtl .wpgb-facet select.wpgb-select+.wpgb-select-controls svg {
+  margin: 0 !important;
+}
+
+.rtl .filtersSec .wpgb-range-facet span.wpgb-range-values {
+  direction: ltr;
+  font-family: 'Karbon' !important;
+}
+
+.rtl .filtersSec .wpgb-checkbox-facet .wpgb-checkbox span.wpgb-checkbox-label {
+  font-family: 'Karbon' !important;
+}
+
+.rtl.material-handling-warehousing-and-industrial-products .productsGridGlobalStyled .product-specs-related .spec-item p.spec-value {
+  font-family: 'Luma' !important;
+}
+
+body.rtl.material-handling-warehousing-and-industrial-products .custom-product-tabs .tabs-content .tab .spec-value {
+  font-family: 'Luma' !important;
+  font-weight: 600 !important;
+}
+
+.rtl.material-handling-warehousing-and-industrial-products .wpr-sub-mega-menu {
+  left: -42rem !important;
+}
+
+.rtl .contact-us-form-wrapper .form .wpcf7-form-control-wrap input[type="checkbox"] {
+  margin-right: 0;
+  margin-left: 0.875rem;
+}
+
+.rtl .contactSec .form .submit p input {
+  border-right: 0.125rem solid white !important;
+}
+
+.applyBtn a svg {
+  width: 0.75rem;
+}
+
+.contact-checkbox label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-product .dialog-message {
+  width: 100% !important;
+}
+
+.single-product header.elementor-slideshow__header.elementor-lightbox-prevent-close {
+  display: none;
+}
+
+.single-product div#elementor-lightbox-slideshow-single-img {
+  display: none !important;
+}
+
+.mapTabs .elementor-column {
+  width: fit-content !important;
+  padding: 0.75rem 1.5rem;
+  background: #7D9FB033;
+  border: 2px solid #7F8589;
+  cursor: pointer;
+}
+
+.mapTabs .elementor-container {
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.mapTabs .machinery.active {
+  background: var(--primary);
+  border-color: var(--primary) !important;
+}
+
+.mapTabs .active p {
+  color: white;
+}
+
+.mapTabs .material.active {
+  background: var(--toyota);
+  border-color: var(--toyota) !important;
+}
+
+.mapTabs .rental.active {
+  background: var(--rental);
+  border-color: var(--rental) !important;
+}
+
+.mapTabs p {
+  color: black;
+}
+
+.seperate-locations-tabs .locations-map-text {
+  display: none;
+}
+
+.seperate-locations-tabs .locations-map-text.active {
+  display: block;
+}
+
+/* Static Map  */
+.static-map>img {
+  width: 100%;
+  height: 32.125rem;
+  object-fit: cover;
+}
+
+.markerDiv {
+  position: absolute;
+}
+
+.static-map {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.markerDiv.sharma {
+  top: 2.188rem;
+  left: 33rem;
+}
+
+.info {
+  display: none;
+}
+
+.info.active {
+  display: block;
+}
+
+.markerDiv.madina {
+  top: 11.8rem;
+  left: 42.5rem;
+}
+
+.markerDiv.jeddah-b {
+  top: 18.75rem;
+  left: 41rem;
+}
+
+.markerDiv.jeddah-o {
+  top: 18.75rem;
+  left: 39.4rem;
+}
+
+.markerDiv.jeddah-r {
+  top: 18.75rem;
+  left: 37.7rem;
+}
+
+.markerDiv.abha-r {
+  bottom: 2.25rem;
+  left: 52rem;
+}
+
+.markerDiv.abha-o {
+  bottom: 2.25rem;
+  left: 53.6rem;
+}
+
+.markerDiv.abha-b {
+  bottom: 2.25rem;
+  left: 55.3rem;
+}
+
+.markerDiv.riyadh-b {
+  top: 11.25rem;
+  left: 57.5rem;
+}
+
+.markerDiv.riyadh-o {
+  top: 11.25rem;
+  left: 55.8rem;
+}
+
+.markerDiv.riyadh-r {
+  top: 11.25rem;
+  left: 54rem;
+}
+
+.markerDiv.dammam-b {
+  top: 8.438rem;
+  left: 62.2rem;
+}
+
+.markerDiv.dammam-o {
+  top: 8.438rem;
+  left: 60.5rem;
+}
+
+.markerDiv.dammam-r {
+  top: 8.438rem;
+  left: 58.7rem;
+}
+
+.wpsl-gmap-canvas .wpsl-infobox {
+  max-width: 100% !important;
+  width: fit-content !important;
+}
+
+
+.static-map>img {
+  width: 100%;
+  height: 32.125rem;
+  object-fit: cover;
+}
+
+.markerDiv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.static-map {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.markerDiv.sharma {
+  top: 2.188rem;
+  left: 27.5rem;
+}
+
+.info.active {
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.markerDiv.madina {
+  top: 11.8rem;
+  left: 36.5rem;
+}
+
+.markerDiv.jeddah-b {
+  top: 18.75rem;
+  left: 35rem;
+}
+
+.markerDiv.jeddah-o {
+  top: 18.75rem;
+  left: 33.4rem;
+}
+
+.markerDiv.jeddah-r {
+  top: 18.75rem;
+  left: 31.7rem;
+}
+
+.markerDiv.abha-r {
+  bottom: 2.25rem;
+  left: 52rem;
+}
+
+.markerDiv.abha-o {
+  bottom: 2.25rem;
+  left: 53.6rem;
+}
+
+.markerDiv.abha-b {
+  bottom: 2.25rem;
+  left: 55.3rem;
+}
+
+.markerDiv.riyadh-b {
+  top: 11.25rem;
+  left: 57.5rem;
+}
+
+.markerDiv.riyadh-o {
+  top: 11.25rem;
+  left: 55.8rem;
+}
+
+.markerDiv.riyadh-r {
+  top: 11.25rem;
+  left: 54rem;
+}
+
+.markerDiv.dammam-b {
+  top: 8.438rem;
+  left: 62.2rem;
+}
+
+.markerDiv.dammam-o {
+  top: 8.438rem;
+  left: 60.5rem;
+}
+
+.markerDiv.dammam-r {
+  top: 8.438rem;
+  left: 58.7rem;
+}
+
+.info {
+  min-width: 155px;
+  max-width: 13.5rem !important;
+  padding: 0.7rem;
+  border-radius: 4px;
+  font-weight: 300;
+  border: 1px solid #ccc;
+  background: #fff !important;
+  position: relative;
+  top: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s ease-out;
+  z-index: 2
+}
+
+.info strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info p {
+  font-size: 0.875rem !important;
+}
+
+.info:after {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #fff;
+  content: '';
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -11px;
+  transform: translate(-50%);
+}
+
+.info.info-abha-b {
+  top: -1rem;
+}
+
+#wpsl-gmap .wpsl-info-window, .wpsl-gmap-canvas .wpsl-info-window {
+  max-width: 100% !important;
+}
+
+/* #wpsl-wrap #wpsl-result-list ul li:last-child {
+    margin-bottom: 0 !important;
+} */
+
+/* .wpsl-store-details.wpsl-store-listing.wpsl-active-details:before {
+  border-bottom-color: white;
+} */
+
+#wpsl-result-list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li.machinery.jeddah {
+  order: 2;
+}
+
+li.jeddah.material {
+  order: 1;
+}
+
+li.jeddah.rental {
+  order: 3;
+}
+
+li.heavy.riyadh {
+  order: 5;
+}
+
+li.riyadh.material {
+  order: 4;
+}
+
+li.riyadh.rental {
+  order: 6;
+}
+
+li.dammam.heavy {
+  order: 8;
+}
+
+li.dammam.material {
+  order: 7;
+}
+
+li.dammam.rental {
+  order: 9;
+}
+
+li.machinery.abha---khamis-mushayt.heavy {
+  order: 11;
+}
+
+li.machinery.abha---khamis-mushayt.material {
+  order: 10;
+}
+
+li.machinery.abha---khamis-mushayt.rental {
+  order: 12;
+}
+
+li.madinah-al-munawarah.heavy {
+  order: 13;
+}
+
+/* New Ordering  */
+li[class*="machinery"][class*="abha"] {
+  order: 11 !important;
+}
+
+li[class*="machinery"][class*="abha"][class*="material"] {
+  order: 10 !important;
+}
+
+li[class*="machinery"][class*="abha"][class*="rental"] {
+  order: 12 !important;
+}
+
+/* --- BACKGROUND COLORS --- */
+
+/* For Rental Solutions (حلول) */
+/* li[class*="rental"],
+li[class*="حلول"] {
+  background-color: var(--rental) !important;
+}
+ */
+/* For Machinery (الآلات / machinery) */
+/* li[class*="machinery"],
+li[class*="الآلات"] {
+  background-color: var(--primary) !important;
+} */
+
+/* For Material Handling (التعامل / material) */
+/* li[class*="material"],
+li[class*="التعامل"] {
+  background-color: var(--toyota) !important;
+} */
+
+/* --- SORTING ORDER --- */
+
+/* 1. JEDDAH (جدة) */
+li[class*="جدة"][class*="التعامل"] {
+  order: 1 !important;
+}
+
+li[class*="جدة"][class*="الآلات"] {
+  order: 2 !important;
+}
+
+li[class*="جدة"][class*="حلول"] {
+  order: 3 !important;
+}
+
+/* 2. RIYADH (الرياض) */
+li[class*="الرياض"][class*="التعامل"] {
+  order: 4 !important;
+}
+
+li[class*="الرياض"][class*="الآلات"] {
+  order: 5 !important;
+}
+
+li[class*="الرياض"][class*="حلول"] {
+  order: 6 !important;
+}
+
+/* 3. DAMMAM (الدمام) */
+li[class*="الدمام"][class*="التعامل"] {
+  order: 7 !important;
+}
+
+li[class*="الدمام"][class*="الآلات"] {
+  order: 8 !important;
+}
+
+li[class*="الدمام"][class*="حلول"] {
+  order: 9 !important;
+}
+
+/* 4. KHAMIS MUSHAYT (خميس-مشيط) */
+li[class*="خميس-مشيط"][class*="التعامل"] {
+  order: 10 !important;
+}
+
+li[class*="خميس-مشيط"][class*="الآلات"] {
+  order: 11 !important;
+}
+
+li[class*="خميس-مشيط"][class*="حلول"] {
+  order: 12 !important;
+}
+
+/* 5. MADINAH (المدينة-المنورة) */
+li[class*="المدينة-المنورة"][class*="الآلات"] {
+  order: 13 !important;
+}
+
+#wpsl-wrap #wpsl-result-list ul li.machinery.حلول {
+  background-color: #f25e18 !important;
+}
+
+.rtl .wpsl-store-location span:nth-child(4) {
+  font-family: 'Karbon' !important;
+}
+
+
+/* New Ordering End  */
+
+.newMapSec .wpsl-info-window p>span:nth-child(2), .newMapSec .wpsl-info-window p>span:nth-child(3) {
+  display: none;
+}
+
+/* .newMapSec .wpsl-store-location p > span:nth-child(2),.newMapSec .wpsl-store-location p > span:nth-child(3) {
+    display: none;
+} */
+
+
+.newMapSec #wpsl-stores>ul>li>div.wpsl-store-location>p:nth-child(1)>span.wpsl-street:nth-child(2) {
+  display: none;
+}
+
+.newMapSec .wpsl-store-location p:nth-child(1) .wpsl-street:nth-child(1) {
+  order: 1;
+  font-weight: 600 !important;
+}
+
+.newMapSec .wpsl-store-location p:nth-child(1) strong {
+/*   order: 3; */
+  font-weight: 700;
+}
+
+span.wpsl-street {
+  font-weight: 700;
+}
+
+.newMapSec .wpsl-store-location p {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+ul>li.machinery.madinah>div.wpsl-store-location>p:nth-child(1)>span.wpsl-street:nth-child(2) {
+  display: block !important;
+  font-weight: 400;
+  order: 2;
+}
+
+li.machinery.madinah .wpsl-store-location p span {
+  display: none;
+}
+
+li.machinery.madinah .wpsl-store-location p span.wpsl-street {
+  display: block;
+}
+
+/* People Page  */
+.peopleGrid .elementor-container {
+    display: grid !important;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+
+.peopleGrid .elementor-container .elementor-column {
+    width: 100% !important;
+}
+
+.peopleGrid .elementor-container .elementor-column img {
+    width: 100%;
+}
+
+.peopleGrid .elementor-container .elementor-column h3 {font-weight: 600 !important;margin-top: 0.5rem !important;}
+
+.peopleGrid .elementor-container .elementor-column .global-btn a svg {
+    width: 1rem;
+}
+
+.ourPeopleSec .global-btn a {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.innerPeople .elementor-container {
+    justify-content: space-between;
+}
+
+.innerPeople .elementor-container .col-1 {
+    width: 24.375rem !important;
+}
+
+.innerPeople .elementor-container .col-2 {
+    width: 60rem !important;
+}
+
+.subCatSecRental{
+    display:none;
+}
+
+.rental-solutions-and-commercial-vehicles .subCatSecRental {
+    display: block;
+}
+
+.footer-bottom .col-1 {
+    width: fit-content !important;
+}
+
+.footer-bottom .col-2 {
+    width: fit-content !important;
+}
+
+.footer-bottom .linkedInFooter ul li:last-child a {
+    border: 0.063rem solid #43413e;
+    padding: 1.25rem 1rem;
+    width: fit-content;
+    border-top: 0;
+    border-bottom: 0;
+    background: #43413e !important;
+}
+
+.footer-bottom .linkedInFooter ul li:last-child a .elementor-icon-list-text {
+    display: none;
+}
+
+.footer-bottom .linkedInFooter ul li:last-child a svg {
+        width: 1.125rem !important;
+    height: 1.125rem !important;
+    margin: 0 !important;
+}
+
+.searchRes h3.elementor-post__title a {
+    font-size: 2rem !important;
+    line-height: 1.5 !important;
+    font-weight: 600 !important;
+    display: block;
+    width: fit-content;
+    transition: all 0.4s ease-out;
+    position: relative;
+    margin-bottom: 0.5rem !important;
+    color: var(--primary) !important;
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.searchRes .elementor-post__read-more-wrapper a {
+    display: flex;
+    border-radius: 0;
+    width: fit-content;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: white !important;
+    font-weight: 500;
+    transition: all 0.4s ease-out;
+    background: var(--primary);
+    padding: 12px 24px;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.searchRes .elementor-post__read-more-wrapper a img {
+    width: 1rem;
+}
+
+.searchRes .elementor-post__read-more-wrapper a:hover {
+    opacity: 0.9;
+}
+
+.rtl .searchRes .elementor-post__read-more-wrapper a img {
+    transform: rotate(180deg);
+}
+/* Arabic End  */
+
+/* Mobile CSS Start  */
+@media screen and (min-width: 280px) and (max-width: 600px) {
+
+  .myContainer,
+  .myContainer-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sec-padded {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .container-right {
+    padding-right: 1rem !important;
+  }
+
+  .container-left {
+    padding-left: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+    line-height: inherit !important;
+  }
+
+  body .elementor-widget:not(:last-child).m-bottom-2 {
+    margin-bottom: 1rem !important;
+  }
+
+  .m-bottom-3 {
+    margin-bottom: 2rem !important;
+  }
+
+  .industrySecTop .elementor-container {
+    gap: 3rem;
+  }
+
+  .variant-btn a {
+    font-size: 1rem;
+    line-height: inherit;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+
+  /* Header Start Mobile  */
+  .header {
+    padding: 1rem 0;
+    padding-left: 1rem;
+  }
+
+  .header .contactBtn {
+    display: none;
+  }
+
+  .topBar {
+    display: none;
+  }
+
+  .header .col-3 {
+    width: 12rem !important;
+    order: 3;
+  }
+
+  .header.elementor-section .col-1 {
+    width: 1.25rem !important;
+    margin-bottom: 0;
+    order: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4rem;
+    background: transparent;
+  }
+
+  .header .col-2 {
+    width: fit-content !important;
+    order: 1;
+  }
+
+  .searchHeader {
+    right: auto;
+    left: 0;
+  }
+
+  .header .wpr-mobile-toggle {
+    padding: 0;
+    width: 2.5rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    border-color: #616163 !important;
+  }
+
+  .header .wpr-mobile-toggle span.wpr-mobile-toggle-line {
+    height: 0.2rem !important;
+    background: #616163 !important;
+  }
+
+  .header .col-2 ul {
+    gap: 1rem;
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+  }
+
+  .header .col-2 ul li a {
+    line-height: inherit;
+    font-size: 1rem;
+    /*     border-bottom: 0.063rem solid #b1aca0; */
+    border: none;
+    padding: 0.5rem 0 !important;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .header .col-2 ul li:before {
+    display: none;
+  }
+
+  .header .col-2 ul.sub-menu.wpr-mobile-sub-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header .col-2 ul.sub-menu.wpr-mobile-sub-menu li a {
+    font-size: 1rem !important;
+    text-align: left;
+  }
+
+  .header .col-2 ul.sub-menu.wpr-mobile-sub-menu li a:before {
+    display: none;
+  }
+
+  .header .col-2 ul li a:after {
+    margin: 0 !important;
+    color: #111212 !important;
+
+  }
+
+  .rtl .header .col-2 ul li a:after {
+    left: 0 !important;
+    right: auto;
+
+  }
+
+  .rtl .header .col-2 ul.sub-menu.wpr-mobile-sub-menu li a {
+    text-align: right;
+  }
+
+  .header .col-2 ul li.current-menu-item a {
+    border-color: var(--primary) !important;
+    background: transparent !important;
+    border-bottom: 0.063rem solid;
+  }
+
+  .header .col-2 ul.wpr-mobile-nav-menu {
+    margin: 0 !important;
+    top: 3.4rem;
+  }
+
+  /* 	Header End Mobile  */
+
+  .heroSec a {
+    margin-top: 1.5rem !important;
+    font-size: 1rem;
+  }
+
+  .heroSec:before,
+  .heroSec:after {
+    display: none;
+  }
+
+  .heroSec .slide-progress-wrap {
+    padding: 1rem;
+    left: 1rem;
+  }
+
+  .heroSec .slide-progress-wrap span {
+    font-size: 1rem;
+  }
+
+  .heroSec .swiper-pagination {
+    left: 16.7rem !important;
+    padding: 1rem;
+    gap: 1rem;
+    height: 3.5rem;
+    padding-left: 0;
+    padding-left: 1rem;
+  }
+
+  .industrySec {
+    padding-top: 3rem;
+  }
+
+  .productsGrid .elementor-container {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .productsGrid .elementor-container .box:hover {
+    margin-top: 0 !important;
+  }
+
+  .productsGrid .elementor-container .box .elementor-image-box-wrapper {
+    height: 20rem;
+  }
+
+  .productsGrid .elementor-container .box .elementor-image-box-content {
+    padding: 1rem;
+    min-height: auto;
+    bottom: 0;
+  }
+
+  .productsGrid .elementor-container .box:hover .elementor-image-box-content h4 {
+    margin-bottom: 3.5rem !important;
+  }
+
+  h4 {
+    font-size: 1.2rem !important;
+  }
+
+  .productsGrid .elementor-container .box .elementor-image-box-content p {
+    bottom: 0;
+    padding-right: 1rem;
+  }
+
+  .valuesContent {
+    position: relative !important;
+    bottom: auto;
+    width: 100% !important;
+  }
+
+  .container-left.valuesContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .elementor-widget-heading.white h2 span {
+    font-size: 2rem !important;
+  }
+
+  .rtl .form .submit {
+    position: relative;
+    right: auto;
+    margin-left: auto;
+  }
+
+  .valuesContent .elementor-container .elementor-column {
+    padding: 3rem 1rem;
+  }
+
+  body .elementor-widget:not(:last-child).m-bottom {
+    margin-bottom: 1rem !important;
+  }
+
+  .postSec {
+    padding-top: 3rem;
+  }
+
+  .postSec h2 {
+    width: 100%;
+  }
+
+  .postSec .elementor-loop-container img {
+    height: 15rem;
+  }
+
+  .postDate ul li:first-child {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .postSec h4 {
+    margin-top: 0.5rem !important;
+    min-height: auto !important;
+    line-height: inherit !important;
+  }
+
+  .postSec .variant-btn {
+    margin-top: 1rem;
+  }
+
+  .postDate {
+    bottom: 3.8rem;
+  }
+
+  .contactSec .col-1 {
+    width: 100% !important;
+  }
+
+  .contactSec .col-2 {
+    width: 100% !important;
+    padding: 3rem 1rem;
+    padding-right: 1rem;
+  }
+
+  .form .row p {
+    gap: 1rem;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .form textarea {
+    margin-top: 1rem;
+  }
+
+  .form .submit {
+    margin-top: 1rem;
+  }
+
+  .footer-middle {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-middle .col-1,
+  .footer-middle .col-2,
+  .footer-middle .col-3,
+  .footer-middle .col-4 {
+    width: 100% !important;
+  }
+
+  .footer-middle>.elementor-container {
+    gap: 2rem;
+  }
+
+  .footer-middle ul li a {
+    font-size: 1rem !important;
+  }
+
+  .footer-middle ul {
+    gap: 0.5rem;
+  }
+
+  .footer-middle .col-4 img {
+    width: 10rem;
+  }
+
+  .footer-middle .col-4 .elementor-widget-image {
+    text-align: left !important;
+  }
+
+  .footer-bottom ul {
+    gap: 1rem;
+  }
+
+  .footer-bottom ul li a {
+    font-size: 1rem !important;
+  }
+
+  .footer-bottom ul li a:before {
+    display: none;
+  }
+
+  .footer #wpsl-base-gmap_0 {
+    height: 15rem;
+    margin: 0;
+  }
+
+  .innerPageHero .elementor-widget-image img {
+    height: 25rem;
+  }
+
+  .innerPageHero .pageTitle h1 {
+    width: 100%;
+  }
+
+  .innerPageHero .breadcrumb p#breadcrumbs>span {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  p#breadcrumbs {
+    margin-left: 0.1rem !important;
+  }
+
+  .innerPageHero .breadcrumb p#breadcrumbs>span span.breadcrumb_last,
+  .innerPageHero .breadcrumb p#breadcrumbs>span a {
+    font-size: 0.875rem;
+  }
+
+  .productsInfo .industrySecTop .elementor-container {
+    gap: 1rem;
+  }
+
+  .brandsSec .product-category-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .brandsSec .product-category-cards .category-thumbnail {
+    height: 20rem;
+  }
+
+  .brandsSec .product-category-cards .category-logo {
+    padding: 1rem;
+    height: 5rem;
+  }
+
+  .headerCat.header .col-2 {
+    width: fit-content !important;
+  }
+
+  .headerCat.header .col-2 .innerCol1 {
+    display: none;
+  }
+
+  .headerCat.header .wpr-mobile-toggle {
+    border: none !important;
+  }
+
+  .headerCat.header .wpr-mobile-toggle span.wpr-mobile-toggle-line {
+    background: white !important;
+  }
+
+  .headerCat .searchHeader img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7449%) hue-rotate(160deg) brightness(105%) contrast(95%);
+  }
+
+  .komatsu .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--komatsu);
+  }
+
+  .komatsu .headerCat.header .col-2 ul li a {
+    background: var(--komatsu) !important;
+  }
+
+  .headerCat.header .col-2 ul li {
+    background: transparent !important;
+  }
+
+  .headerCat.header .col-2 ul li.current-menu-item a {
+    border-color: white !important;
+    border-bottom: 0.063rem solid;
+  }
+
+  .headerCat.header .col-2 ul li a:after {
+    color: white !important;
+  }
+
+  .subCatSec .elementor-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .subCatSec .elementor-grid img {
+    height: 20rem !important;
+  }
+
+  .subCatSec .elementor-grid h2 {
+    padding: 1.5rem 1rem !important;
+    font-size: 1.25rem !important;
+  }
+
+  .relatedCat .main-category-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .relatedCat .main-category-grid .category-card-image {
+    height: 25rem;
+  }
+
+  .relatedCat .category-card-content {
+    padding: 1.25rem 1rem;
+    min-height: auto;
+  }
+
+  .relatedCat .category-card-content h3 {
+    width: 90%;
+  }
+
+  .relatedCat a:hover .category-card-content h3 {
+    margin-bottom: 5.5rem !important;
+  }
+
+  .header .col-2 ul li a {
+    background: transparent !important;
+  }
+
+  .headerCat.header .col-2 ul {
+    margin-left: 0;
+    background: transparent;
+  }
+
+  .headerCat.header .col-2 ul li a {
+    /*     border-bottom: 0.063rem solid #8f8f8f !important; */
+    border: none;
+  }
+
+  .productsFilterSec .col-1 {
+    width: 100% !important;
+  }
+
+  .productsFilterSec .col-2 {
+    width: 100% !important;
+  }
+
+  .productsFilterSec>.elementor-container {
+    gap: 3rem;
+  }
+
+  .filterCard img {
+    height: 20rem !important;
+  }
+
+  .filterCard .filterCardHeading h2 {
+    font-size: 2rem !important;
+  }
+
+  .filterCard .filterCardHeading {
+    width: 15rem !important;
+  }
+
+  .totalResults .wpgb-facet span.wpgb-result-count {
+    font-size: 1rem;
+  }
+
+  .totalResults .wpgb-facet {
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+
+  .sortByKomatsuCol .wpgb-facet select.wpgb-select {
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .productsGridGlobalStyled .productContent {
+    padding: 1rem 0;
+  }
+
+  .productsGridGlobalStyled .product-specs-related .spec-item p {
+    font-size: 1rem !important;
+  }
+
+  .productsGridGlobalStyled .elementor-widget-button a {
+    font-size: 1rem;
+    line-height: inherit;
+  }
+
+  .productsGridGlobalStyled .elementor-widget-button a>span {
+    gap: 1rem;
+  }
+
+  .productsGridGlobalStyled .elementor-widget-button a>span svg {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .productSpecs .col-1 {
+    width: 100% !important;
+  }
+
+  .productSpecs .col-2 {
+    width: 100% !important;
+  }
+
+  .productSpecs>.elementor-container {
+    gap: 2rem;
+  }
+
+  .productSpecs .col-2 h2 {
+    font-size: 2rem !important;
+  }
+
+  .global-btn a {
+    padding: 1rem;
+    font-size: 1rem;
+    padding-right: calc(1rem + 3.791rem);
+  }
+
+  .custom-product-tabs ul.tabs-nav li {
+    padding: 1rem !important;
+    font-size: 1rem !important;
+  }
+
+  .product-specs .spec-item p.spec-title {
+    font-size: 0.875rem !important;
+  }
+
+  .product-specs .spec-item p.spec-value {
+    font-size: 0.875rem !important;
+    text-align: right;
+  }
+
+  .btnsProducts>.elementor-container {
+    gap: 1rem;
+  }
+
+  .btnsProducts .col-1,
+  .btnsProducts .col-2 {
+    width: 100% !important;
+  }
+
+  .btnsProducts a span.elementor-button-icon {
+    padding: 1rem 2rem;
+  }
+
+  .btnsProducts a {
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    padding-left: calc(5.446rem + 2rem);
+  }
+
+  .btnsProducts a:after {
+    width: 1rem;
+    height: 1rem;
+    right: 1.5rem;
+  }
+
+  .btnsProducts a svg {
+    width: 1.6rem;
+  }
+
+  body .elementor-widget:not(:last-child).m-bottom-3 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .productsGridGlobalStyled .elementor-swiper-button-prev {
+    height: 5rem;
+    left: -1rem !important;
+  }
+
+  .productsGridGlobalStyled .elementor-swiper-button-next {
+    height: 5rem;
+    right: -1.1rem !important;
+  }
+
+  .subCatProductsGrid .subcategory-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .subCatProductsGrid .subcategory-grid a {
+    padding: 1rem 3rem;
+  }
+
+  .subCatProductsGrid .subcategory-grid a img {
+    width: 8rem;
+  }
+
+  .powerscreen .headerCat.header .col-2 ul li a {
+    background: var(--powerscreen) !important;
+  }
+
+  .powerscreen .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--powerscreen);
+  }
+
+  .product-specs .spec-item {
+    gap: 0.5rem;
+  }
+
+  .teksan .headerCat.header .col-2 ul li a {
+    background: var(--teksan) !important;
+  }
+
+  .teksan .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--teksan);
+  }
+
+  .terex .headerCat.header .col-2 ul li a {
+    background: var(--terex) !important;
+  }
+
+  .terex .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--terex);
+  }
+
+  .mds .headerCat.header .col-2 ul li a {
+    background: var(--mds) !important;
+  }
+
+  .mds .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--mds);
+  }
+
+  .man .headerCat.header .col-2 ul li a {
+    background: var(--man) !important;
+  }
+
+  .man .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--man);
+  }
+
+  .material-handling-warehousing-and-industrial-products .headerCat.header .col-2 ul li a {
+    background: var(--toyota) !important;
+  }
+
+  .material-handling-warehousing-and-industrial-products .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--toyota);
+  }
+
+  .material-handling-warehousing-and-industrial-products .innerPageHero .pageTitle h1 {
+    width: 100%;
+  }
+
+  .material-handling-warehousing-and-industrial-products .subcategory-grid {
+    margin-bottom: 1.25rem;
+  }
+
+  .material-handling-warehousing-and-industrial-products .subCatProductsGrid .subcategory-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .productSpecs .custom-product-tabs li {
+    font-size: 1rem;
+  }
+
+  .rental-solutions-and-commercial-vehicles .headerCat.header .col-2 ul li a {
+    background: var(--rental) !important;
+  }
+
+  .rental-solutions-and-commercial-vehicles .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--rental);
+  }
+
+  .rental-solutions-and-commercial-vehicles .subCatSec .elementor-grid h2 {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .productSpecs .col-1 .flex-control-nav {
+    margin-top: 0 !important;
+  }
+
+  .productSpecs .form .row p span {
+    width: 100% !important;
+  }
+
+  .productSpecs .form .submit {
+    width: fit-content;
+  }
+
+  .productSpecs .form .submit p input {
+    width: 100%;
+  }
+
+  .top-padded {
+    padding-top: 3rem;
+  }
+
+  body.rental-solutions-and-commercial-vehicles .productSpecs .col-2 h2 {
+    margin-top: 3rem !important;
+  }
+
+  .valuesSec img {
+    height: 15rem !important;
+  }
+
+  #elementor-popup-modal-4969 {
+    position: fixed !important;
+  }
+
+  .elementor-popup-modal .dialog-message {
+    max-width: 95vw !important;
+  }
+
+  .sec-padded-tb80 {
+    padding-block: 3rem !important;
+  }
+
+  section.value-content-wrapper .elementor-container .elementor-column:first-child {
+    padding-right: 0;
+  }
+
+  #content>div>div>section.elementor-section.elementor-top-section.elementor-element.elementor-element-2ca1528.elementor-section-full_width.sec-padded.myContainer.brandsSec.bg-sec-3.value-content-wrapper.value-content-wrapper-odd.elementor-section-height-default.elementor-section-height-default.wpr-particle-no.wpr-jarallax-no.wpr-parallax-no.wpr-sticky-section-no>div {
+    gap: 3rem;
+  }
+
+  .locations-grid-wrapper .elementor-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .locations-grid-wrapper ul li span.elementor-icon-list-text {
+    font-size: 1rem;
+  }
+
+  .locations-grid-wrapper .elementor-column .elementor-widget-wrap .elementor-element.elementor-widget-heading h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .searchHeader img {
+    margin-right: 0.5rem;
+  }
+
+  .elementor-widget-text-editor ul li {
+    font-size: 1rem;
+  }
+
+  section.elementor-section.single-post-meta-wrapper>.elementor-container {
+    padding-right: 0;
+  }
+
+  section.elementor-section.single-post-meta-wrapper .postDate.single-post-date-wrapper {
+    top: 9rem;
+  }
+
+  .inner-page-sec {
+    padding-inline: 0px;
+  }
+
+  .inner-page-sec.elementor-section-height-default .elementor-container .elementor-column.inner-content {
+    padding: 1rem;
+  }
+
+  .inner-page-sec.value-content-wrapper-even .elementor-container {
+    flex-direction: column-reverse;
+  }
+
+  .inner-content-img img {
+    min-height: auto;
+  }
+
+  section.elementor-section.single-post-meta-wrapper>.elementor-container .elementor-column.single-post-f-image-wrapper img {
+    height: 12rem;
+  }
+
+  #content>div>div>section.elementor-section.elementor-top-section.elementor-element.elementor-element-9f3f5fd.elementor-section-full_width.sec-padded.myContainer.brandsSec.bg-sec-3.value-content-wrapper.value-content-wrapper-even.elementor-section-height-default.elementor-section-height-default.wpr-particle-no.wpr-jarallax-no.wpr-parallax-no.wpr-sticky-section-no>div {
+    gap: 3rem;
+  }
+
+  .contact-us-form-wrapper .form .row {
+    flex-direction: column;
+  }
+
+  .contact-us-form-wrapper .form .row .col {
+    margin-bottom: 1rem;
+  }
+
+  .contact-us-form-wrapper .form .row .col {
+    padding: 0;
+  }
+
+  .contact-us-form-wrapper .form .row .col-6 {
+    width: 100%;
+  }
+
+  .highlightedPostSec .elementor-element.elementor-widget-theme-post-title .elementor-heading-title {
+    width: 100% !important;
+    white-space: normal;
+  }
+
+  .highlightedPostSec section.elementor-section.postDate {
+    right: 0;
+    top: 0;
+  }
+
+  .popupHome {
+    padding: 2rem;
+    padding-top: 2rem;
+  }
+
+  .popupTop>.elementor-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .popupTop .col-1,
+  .popupTop .col-2 {
+    width: 100% !important;
+  }
+
+  #elementor-popup-modal-4969 .dialog-widget-content, #elementor-popup-modal-5474 .dialog-widget-content {
+    top: 5.5rem !important;
+  }
+
+  .rtl .searchHeader img {
+    margin-left: 0;
+  }
+
+  .rtl .heroSec .swiper-slide-inner {
+    padding-right: 1rem !important;
+  }
+
+  .rtl .heroSec .swiper-pagination {
+    right: 1rem !important;
+  }
+
+  .rtl .heroSec .slide-progress-wrap {
+    right: 5.7rem !important;
+  }
+
+  .thankYou .sent img {
+    width: 80% !important;
+  }
+
+  #elementor-popup-modal-4969 .dialog-widget-content, #elementor-popup-modal-5474 .dialog-widget-content {
+    width: 100% !important;
+    box-shadow: none !important;
+    background: #d4d4d4;
+  }
+
+  .rental-solutions-and-commercial-vehicles .innerCol2 {
+    width: 100% !important;
+  }
+
+  .radio-btn-wrapper.inline-radio-wrapper span.wpcf7-form-control {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .radio-btn-wrapper.inline-radio-wrapper span.wpcf7-form-control span.wpcf7-list-item {
+    width: 100%;
+  }
+
+  .form select {
+    font-size: 1rem;
+  }
+
+  .labelsMaps .col-1 {
+    width: 18rem !important;
+  }
+
+  .labelsMaps {
+    width: 100% !important;
+  }
+
+  .homeLocations .elementor-widget-wrap.elementor-element-populated {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+	
+	.peopleGrid .elementor-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+	
+	.innerPeople .elementor-container .col-1,.innerPeople .elementor-container .col-2 {
+    width: 100% !important;
+}
+	
+	.innerPeople .elementor-container {
+    gap: 1rem;
+}
+}
+
+/* Mobile CSS End  */
+
+/* Tablet CSS Start  */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+  .myContainer,
+  .myContainer-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sec-padded {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .container-right {
+    padding-right: 2rem !important;
+  }
+
+  .container-left {
+    padding-left: 2rem;
+  }
+
+  .header {
+    padding: 1rem 0;
+    padding-left: 2rem;
+  }
+
+  .header .contactBtn {
+    display: none;
+  }
+
+  .topBar {
+    display: none;
+  }
+
+  .header .col-3 {
+    width: 15rem !important;
+    order: 3;
+  }
+
+  .header.elementor-section .col-1 {
+    width: 1.25rem !important;
+    margin-bottom: 0;
+    order: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4rem;
+    background: transparent;
+  }
+
+  .header .col-2 {
+    width: fit-content !important;
+    order: 1;
+  }
+
+  .searchHeader {
+    right: auto;
+    left: 0;
+  }
+
+  .header .wpr-mobile-toggle {
+    padding: 0;
+    width: 2.5rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    border-color: #616163 !important;
+  }
+
+  .header .wpr-mobile-toggle span.wpr-mobile-toggle-line {
+    height: 0.2rem !important;
+    background: #616163 !important;
+  }
+
+  .header .col-2 ul {
+    gap: 1rem;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .header .col-2 ul li a {
+    line-height: inherit;
+    border-bottom: 0.063rem solid #b1aca0;
+    padding: 0.5rem 0 !important;
+    gap: 0.5rem;
+    align-items: center;
+    background: transparent !important;
+    font-size: 1.125rem !important;
+  }
+
+  .header .col-2 ul li:before {
+    display: none;
+  }
+
+  .header .col-2 ul.sub-menu.wpr-mobile-sub-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header .col-2 ul.sub-menu.wpr-mobile-sub-menu li a {
+    text-align: left;
+  }
+
+  .header .col-2 ul.sub-menu.wpr-mobile-sub-menu li a:before {
+    display: none;
+  }
+
+  .header .col-2 ul li a:after {
+    margin: 0 !important;
+    color: #111212 !important;
+
+  }
+
+  .rtl .header .col-2 ul li a:after {
+    left: 0 !important;
+    right: auto;
+
+  }
+
+  .rtl .header .col-2 ul.sub-menu.wpr-mobile-sub-menu li a {
+    text-align: right;
+  }
+
+
+
+  .header .col-2 ul li.current-menu-item a {
+    border-color: var(--primary) !important;
+    background: transparent !important;
+  }
+
+  .header .col-2 ul.wpr-mobile-nav-menu {
+    margin: 0 !important;
+    top: 3.4rem;
+  }
+
+  .searchHeader img {
+    width: 2rem !important;
+    margin-right: 0;
+  }
+
+  #elementor-popup-modal-4969 {
+    position: fixed !important;
+  }
+
+  .elementor-popup-modal .dialog-message {
+    max-width: 95vw !important;
+  }
+
+  .heroSec .slide-progress-wrap {
+    left: 2rem !important;
+  }
+
+  .heroSec .swiper-pagination {
+    left: 22rem !important;
+  }
+
+  .home .industrySecTop .col-2 {
+    width: 48% !important;
+  }
+
+  .industrySecTop .col-1 {
+    width: 48% !important;
+  }
+
+  .productsGrid .elementor-container .box .elementor-image-box-wrapper {
+    height: 25rem;
+  }
+
+  .productsGrid .elementor-container .box .elementor-image-box-content {
+    padding: 1rem;
+    min-height: 5.8rem;
+    bottom: 2rem;
+  }
+
+  .productsGrid .elementor-container .box .elementor-image-box-content h4 {
+    font-size: 1.2rem !important;
+  }
+
+  .productsGrid .elementor-container .box:hover .elementor-image-box-content p {
+    transform: translateY(-10%);
+  }
+
+  .productsGrid .elementor-container .box .elementor-image-box-content p {
+    padding-right: 1rem;
+    font-size: 1rem !important;
+  }
+
+  .contactSec .col-2 {
+    padding: 2rem;
+    padding-right: 2rem;
+  }
+
+  .inner-page-sec.elementor-section-height-default .elementor-container .elementor-column.inner-content {
+    padding: 3rem 2rem !important;
+  }
+
+  section.value-content-wrapper .elementor-container .elementor-column:first-child {
+    padding-right: 2rem;
+  }
+
+  .locations-grid-wrapper .elementor-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .locations-grid-wrapper iframe {
+    height: 12rem !important;
+  }
+
+  h2 {
+    font-size: 2.5rem !important;
+  }
+
+  h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .innerPageHero .elementor-widget-image img {
+    height: 25rem;
+  }
+
+  .machinery-power-products-and-commercial-vehicles .industrySecTop .col-1 {
+    width: 100% !important;
+  }
+
+  .brandsSec .product-category-cards .category-thumbnail {
+    height: 15rem;
+  }
+
+  .brandsSec .product-category-cards .category-logo img {
+    width: 9rem;
+  }
+
+  .brandsSec .product-category-cards .category-logo {
+    padding: 0 1rem;
+  }
+
+  .subCatSec .elementor-grid img {
+    height: 15rem !important;
+  }
+
+  .subCatSec .elementor-grid h2 {
+    padding: 1rem !important;
+    font-size: 1.25rem !important;
+  }
+
+  .headerCat.header .col-2 {
+    width: fit-content !important;
+  }
+
+  .headerCat.header .col-2 .innerCol1 {
+    display: none;
+  }
+
+  .headerCat.header .wpr-mobile-toggle {
+    border: none !important;
+  }
+
+  .rental-solutions-and-commercial-vehicles .innerCol2 {
+    width: 100% !important;
+  }
+
+  .headerCat.header .wpr-mobile-toggle span.wpr-mobile-toggle-line {
+    background: white !important;
+  }
+
+  .headerCat .searchHeader img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7449%) hue-rotate(160deg) brightness(105%) contrast(95%);
+  }
+
+  .komatsu .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--komatsu);
+  }
+
+  .komatsu .headerCat.header .col-2 ul li a {
+    background: var(--komatsu) !important;
+  }
+
+  .headerCat.header .col-2 ul li {
+    background: transparent !important;
+  }
+
+  .headerCat.header .col-2 ul li.current-menu-item a {
+    border-color: white !important;
+  }
+
+  .headerCat.header .col-2 ul li a:after {
+    color: white !important;
+  }
+
+  .headerCat.header .col-2 ul {
+    margin-left: 0;
+    background: transparent;
+  }
+
+  .sortByKomatsuCol {
+    width: 48% !important;
+  }
+
+  .komatsu .totalCol {
+    width: 48% !important;
+  }
+
+  .sortBySec>.elementor-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .productsGridGlobalStyled .elementor-swiper-button-next {
+    right: calc(-1.625rem - 0rem) !important;
+  }
+
+  .productsGridGlobalStyled .elementor-swiper-button-prev {
+    left: calc(-1.625rem - 0rem) !important;
+  }
+
+  .subCatProductsGrid .subcategory-grid a {
+    padding: 2rem 4rem;
+  }
+
+  .btnsProducts a {
+    font-size: 2rem;
+  }
+
+  .relatedCat .category-card-content h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .powerscreen .headerCat.header .col-2 ul li a {
+    background: var(--powerscreen) !important;
+  }
+
+  .powerscreen .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--powerscreen);
+  }
+
+  .totalCol {
+    width: 100%;
+  }
+
+  .teksan .headerCat.header .col-2 ul li a {
+    background: var(--teksan) !important;
+  }
+
+  .teksan .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--teksan);
+  }
+
+  .mds .headerCat.header .col-2 ul li a {
+    background: var(--mds) !important;
+  }
+
+  .mds .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--mds);
+  }
+
+  .terex .headerCat.header .col-2 ul li a {
+    background: var(--terex) !important;
+  }
+
+  .terex .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--terex);
+  }
+
+  .material-handling-warehousing-and-industrial-products .headerCat.header .col-2 ul li a {
+    background: var(--toyota) !important;
+  }
+
+  .material-handling-warehousing-and-industrial-products .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--toyota);
+  }
+
+  .rental-solutions-and-commercial-vehicles .subCatSec .elementor-grid img {
+    height: 20rem !important;
+  }
+
+  .rental-solutions-and-commercial-vehicles .headerCat.header .col-2 ul li a {
+    background: var(--rental) !important;
+  }
+
+  .rental-solutions-and-commercial-vehicles .headerCat.header .col-2 ul.wpr-mobile-nav-menu {
+    background: var(--rental);
+  }
+
+  .rental-solutions-and-commercial-vehicles .subCatSec .elementor-grid h2 {
+    padding: 1.5rem 1rem !important;
+  }
+
+  section.elementor-section.single-post-meta-wrapper>.elementor-container {
+    padding-right: 0;
+  }
+
+  .highlightedPostSec .elementor-element.elementor-widget-theme-post-title .elementor-heading-title {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .rtl .valuesContent {
+    padding-right: 2rem;
+    padding-right: 2rem;
+  }
+
+  .rtl .heroSec .swiper-slide-inner {
+    padding-right: 2rem !important;
+  }
+
+  #elementor-popup-modal-4969 .dialog-widget-content, #elementor-popup-modal-5474 .dialog-widget-content {
+    top: 6.5rem !important;
+  }
+
+  .rtl .searchHeader img {
+    margin-left: 0;
+  }
+
+  .rtl .heroSec .swiper-slide-inner {
+    padding-right: 1rem !important;
+  }
+
+  .rtl .heroSec .swiper-pagination {
+    right: 1rem !important;
+  }
+
+  .rtl .heroSec .slide-progress-wrap {
+    right: 5.7rem !important;
+  }
+}
+
+/* Tablet CSS End  */
+
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  html {
+    font-size: 0.9722222222vw;
+  }
+
+  .header .col-2 {
+    width: 60rem !important;
+  }
+
+  .headerCat.header .col-2 {
+    width: 60rem !important;
+  }
+
+  .contact-radio {
+    margin-bottom: 2rem !important;
+  }
+}
+
+
+#wpsl-map-controls span {
+  font-family: inherit !important;
+}
